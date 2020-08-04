@@ -1,9 +1,13 @@
 // Front Page Styles
 .home{
     .site{
-        .site-main{
+        .site-header{
 
-           
+        }
+        .site-main{
+            .entry-header{
+                display:none;
+            }
         }
     }
 

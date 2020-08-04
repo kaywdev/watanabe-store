@@ -5,10 +5,20 @@ select,
 optgroup,
 textarea {
 	color: $color__text-main;
-	font-family: $font__main;
 	font-size: 1rem;
 	line-height: $font__line-height-body;
 }
+body.ja,
+body:lang(ja){
+	font-family: $font__main-jp;
+}
+body.en-US,
+body:lang(en-US){
+	font-family: $font__main-en;
+}
+
+
+
 
 @import "headings";
 @import "copy";

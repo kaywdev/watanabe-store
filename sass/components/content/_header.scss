@@ -1,0 +1,76 @@
+.site-header{
+    position: relative;;
+    .roof{
+        background-image:url(images/header/roof.png);
+        background-repeat: repeat-x;
+        width: 100%;
+        height: 4.25rem;
+        display:block;
+        background-size: auto 4.25rem;
+    }
+   .header-wrapper{
+        transform: translateY(-0.5rem);
+        .header-top{
+                width:100%;
+                display: inline-grid;
+                grid-template-areas: 
+                    "banner banner"
+                    "est lang";
+                align-items: center;
+                padding: 0 1.25rem;
+               
+            .est{
+                @include en-serif-heading();
+                color:$color__green;
+                grid-area:est;
+                margin: 0;
+                font-size: 1.2rem;
+            }
+            .top-banner{
+                grid-area: banner;
+                text-align: center;
+                font-size:1.12rem;
+            }
+            .bogo-language-switcher{
+                display:flex;
+                grid-area: lang;
+                padding:0;
+                margin:0;
+                justify-self: end;
+                        a{
+                            text-decoration: none;
+                            @include en-serif-heading();
+                            color:#B4B4B4;
+                            padding: 0px 5px;
+                        }
+                        a.current{
+                            color:$color__green;;
+                        }
+                    
+                .ja{
+                    order:1;
+                    &::after{
+                        content:'/';
+                    }
+                }
+                .en-US{
+                    order:2;
+                }
+            }
+        }
+
+        .site-branding{
+            background-color:$color__green;
+            .site-title{
+                margin: 0;
+                .logo-wrapper {
+                    padding: 0.7rem 1.25rem;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                }
+            }
+        }
+    }
+}
