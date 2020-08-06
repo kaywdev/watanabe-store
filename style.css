@@ -376,7 +376,7 @@ footer.entry-footer { display: none; }
 
 @media (min-width: 41.875em) { .entry-content .contact { display: inline-grid; width: 100%; grid-template-columns: 25% 50% 25%; align-items: center; justify-items: center; } }
 
-.entry-content .contact .cicon { background-repeat: no-repeat; width: 5rem; height: 5rem; display: block; background-position: center center; -webkit-mask-position: center center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.entry-content .contact .cicon { width: 5rem; height: 5rem; display: block; mask-position: center center; -webkit-mask-position: center center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
 
 .entry-content .contact .icon1 { display: none; }
 
@@ -392,7 +392,7 @@ footer.entry-footer { display: none; }
 
 .entry-content .contact .contact-text-wrapper::after { content: ''; position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; border: 1px solid #126C42; }
 
-.entry-content .contact .contact-text-wrapper h3 { margin-top: 0; margin-bottom: 0.5rem; font-size: 1.05rem; }
+.entry-content .contact .contact-text-wrapper h3 { margin-top: 0; margin-bottom: 0.5rem; font-size: 1.05rem !important; }
 
 .entry-content .contact .contact-text-wrapper p { font-weight: 900; font-size: 1.375rem; margin: 0; }
 
@@ -487,5 +487,53 @@ footer.entry-footer { display: none; }
 ## Front page
 --------------------------------------------------------------*/
 .home .site .site-main .entry-header { display: none; }
+
+.home .site .site-main .entry-content .wp-block-cover::after { content: ''; position: absolute; bottom: -2.5rem; width: 100%; height: 4rem; background-image: url(images/banner/banner-w-mb.svg); background-repeat: no-repeat; background-position: bottom; z-index: 1; background-size: 100% auto; }
+
+.home .site .site-main .entry-content .wp-block-cover .wp-block-cover__inner-container p { font-family: "source-han-serif-japanese", serif; font-size: 2.4rem; line-height: 1; padding-bottom: 5px; border-bottom: 1px solid #ffffff; margin-top: 0; margin-bottom: 1.5rem; }
+
+.home .site .site-main .entry-content .wp-block-cover .wp-block-cover__inner-container p:first-of-type, .home .site .site-main .entry-content .wp-block-cover .wp-block-cover__inner-container p:last-of-type { max-width: 13rem; }
+
+.home .site .site-main .entry-content .wp-block-cover .wp-block-cover__inner-container p:nth-of-type(2) { max-width: 16rem; }
+
+.home .site .site-main .entry-content .wp-block-cover .wp-block-cover__inner-container p span { font-family: "haboro-contrast-condensed", sans-serif; font-size: 2.3rem; }
+
+.home .site .site-main .entry-content p.intro { font-family: "source-han-serif-japanese", serif; font-size: 1.25rem; text-align: center; }
+
+.home .site .site-main .entry-content p.intro span { font-size: 2rem; }
+
+.home .site .site-main .entry-content h3 { font-family: "source-han-serif-japanese", serif; color: #126C42; font-size: 1.5rem; justify-content: center; display: inline-flex; align-items: center; width: 100%; }
+
+.home .site .site-main .entry-content h3 .h-icon { margin: 0px 5px; width: 30px; height: 30px; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+
+.home .site .site-main .entry-content h3 .sp-icon { background-color: #4B2C34; mask-image: url(images/icons/front/sp-icon.svg); -webkit-mask-image: url(images/icons/front/sp-icon.svg); }
+
+.home .site .site-main .entry-content h3 .dl-icon { width: 33px; height: 24px; background-color: #4B2C34; mask-image: url(images/icons/front/fp-truck.svg); -webkit-mask-image: url(images/icons/front/fp-truck.svg); }
+
+.home .site .site-main .entry-content h3 .loc-icon { background-color: #4B2C34; mask-image: url(images/icons/front/shop.svg); -webkit-mask-image: url(images/icons/front/shop.svg); }
+
+.home .site .site-main .entry-content .special .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container { background-color: rgba(245, 227, 5, 0.85); font-family: "OtsutomeFont", sans-serif; position: relative; padding: 1rem 2rem; width: 100%; display: inline-grid; grid-template-areas: "title title" "produce produce" "comment product" "product-count price"; align-items: center; }
+
+.home .site .site-main .entry-content .special .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; height: 87%; border: 5px solid rgba(209, 3, 3, 0.7); }
+
+.home .site .site-main .entry-content .special .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container h4 { color: rgba(209, 3, 3, 0.7); font-size: 2.3rem; text-align: center; margin: 0; padding-top: 1rem; grid-area: title; line-height: 1; }
+
+.home .site .site-main .entry-content .special .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p { margin: 0; }
+
+.home .site .site-main .entry-content .special .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container .produce { grid-area: produce; font-size: 1.25rem; }
+
+.home .site .site-main .entry-content .special .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container .product { grid-area: product; font-size: 2.4rem; }
+
+.home .site .site-main .entry-content .special .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container .product-count { grid-area: product-count; font-size: 2rem; color: rgba(209, 3, 3, 0.7); }
+
+.home .site .site-main .entry-content .special .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container .price { grid-area: price; font-size: 4rem; color: rgba(209, 3, 3, 0.7); justify-self: end; }
+
+.home .site .site-main .entry-content .special .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container .comment { grid-area: comment; color: rgba(209, 3, 3, 0.7); font-size: 1.5rem; transform: rotate(-23deg); }
+
+.home .site .site-main .entry-content .fp-delivery .deli-text-wrapper .wp-block-group__inner-container { text-align: center; font-size: 1.25rem; }
+
+.home .site .site-main .entry-content .fp-location .location-text-wrapper { padding: 0 2rem; }
+
+.home .site .site-main .entry-content .fp-location .location-text-wrapper .wp-block-group__inner-container { font-size: 1.25rem; }
 
 /*# sourceMappingURL=../watanabestore/sass/maps/style.css.map */

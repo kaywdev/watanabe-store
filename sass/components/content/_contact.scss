@@ -13,11 +13,10 @@
         }
      
         .cicon{         
-            background-repeat: no-repeat;
             width: 5rem;
             height: 5rem;
             display:block; 
-            background-position: center center;
+            mask-position: center center;
             -webkit-mask-position: center center;
             -webkit-mask-size: contain;
             mask-size:contain;
@@ -75,14 +74,16 @@
             h3{
                 margin-top:0;
                 margin-bottom: 0.5rem;
-                font-size:1.05rem;
+                font-size:1.05rem !important;
             }
+           
             p{
                 font-weight: 900;
                 font-size: 1.375rem;
                 margin: 0;
             }
         }
+        
        
     }
     .flower{

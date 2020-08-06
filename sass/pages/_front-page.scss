@@ -1,12 +1,181 @@
 // Front Page Styles
 .home{
     .site{
-        .site-header{
-
-        }
         .site-main{
             .entry-header{
                 display:none;
+            }
+            .entry-content{
+                .wp-block-cover{
+                    &::after{
+                        content:'';
+                        position: absolute;
+                        bottom:-2.5rem;
+                        width: 100%;
+                        height: 4rem;
+                        background-image:url(images/banner/banner-w-mb.svg);
+                        background-repeat: no-repeat;
+                        background-position: bottom;
+                        z-index: 1;
+                        background-size: 100% auto;
+                    }
+                    .wp-block-cover__inner-container{
+                        p{
+                            font-family: $font__heading-jp;
+                            font-size: 2.4rem;
+                            line-height: 1;
+                            padding-bottom: 5px;
+                            border-bottom: 1px solid #ffffff;
+                            margin-top:0;
+                            margin-bottom: 1.5rem;
+
+                            &:first-of-type,
+                            &:last-of-type{
+                                max-width:13rem;
+                            }
+
+                            &:nth-of-type(2){
+                                max-width:16rem;
+                            }
+                    
+                            span{
+                                font-family: $font__heading-en;
+                                font-size:2.3rem;
+                            }
+                        }
+                    }
+                }
+                p.intro{
+                    font-family: $font__heading-jp;
+                    font-size: 1.25rem;
+                    text-align: center;
+                    span{
+                        font-size:2rem;
+                    }
+                }
+                h3{
+                    font-family: $font__heading-jp;
+                    color: $color__green;
+                    font-size: 1.5rem;
+                    justify-content: center;
+                    display: inline-flex;
+                    align-items: center;
+                    width: 100%;
+                    .h-icon{
+                        margin: 0px 5px;
+                        width:30px;
+                        height: 30px;
+                        -webkit-mask-size: contain;
+                        mask-size:contain;
+                        mask-repeat: no-repeat;
+                    }
+                    .sp-icon{
+                        background-color: $color__brown;
+                        mask-image:url(images/icons/front/sp-icon.svg);
+                        -webkit-mask-image:url(images/icons/front/sp-icon.svg);
+                    }
+                    .dl-icon{
+                        width: 33px;
+                        height: 24px;
+                        background-color: $color__brown;
+                        mask-image:url(images/icons/front/fp-truck.svg);
+                        -webkit-mask-image:url(images/icons/front/fp-truck.svg);
+                    }
+                    .loc-icon{
+                        background-color: $color__brown;
+                        mask-image:url(images/icons/front/shop.svg);
+                        -webkit-mask-image:url(images/icons/front/shop.svg);
+                    }
+                }
+
+                .special{
+                    .wp-block-columns{
+                        .sp-tag{
+                            .wp-block-group{
+                                .wp-block-group__inner-container{
+                                    background-color: $color__spt-yellow;
+                                    font-family: $font__sptag-jp;
+                                    position: relative;
+                                    padding: 1rem 2rem;
+                                    width:100%;
+                                    display: inline-grid;
+                                    grid-template-areas: 
+                                    "title title"
+                                    "produce produce"
+                                    "comment product"
+                                    "product-count price";
+                                    align-items: center;
+                                   
+                                    &::after{
+                                        content:'';
+                                        position: absolute;
+                                        top:50%;
+                                        left:50%;
+                                        transform: translate(-50%, -50%);
+                                        width: 90%;
+                                        height: 87%;
+                                        border: 5px solid $color__spt-red;
+                                    }
+
+                                    h4{
+                                        color:$color__spt-red;
+                                        font-size:2.3rem;
+                                        text-align: center;
+                                        margin:0;
+                                        padding-top: 1rem;
+                                        grid-area:title;
+                                        line-height: 1;
+                                    }
+                                    p{
+                                        margin:0;
+                                    }
+                                    .produce{
+                                        grid-area:produce;
+                                        font-size: 1.25rem;
+                                    }
+                                    .product{
+                                        grid-area:product;
+                                        font-size:2.4rem;
+                                    }
+                                    .product-count{
+                                        grid-area:product-count;
+                                        font-size:2rem;
+                                        color:$color__spt-red;
+                                    }
+                                    .price{
+                                        grid-area:price;
+                                        font-size:4rem;
+                                        color:$color__spt-red;
+                                        justify-self: end;
+                                    }
+                                    .comment{
+                                        grid-area:comment;
+                                        color:$color__spt-red;
+                                        font-size: 1.5rem;
+                                        transform: rotate(-23deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .fp-delivery{
+                    .deli-text-wrapper{
+                        .wp-block-group__inner-container{
+                            text-align: center;
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+                .fp-location{
+                    .location-text-wrapper{
+                        padding: 0 2rem;
+                        .wp-block-group__inner-container{
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
             }
         }
     }
