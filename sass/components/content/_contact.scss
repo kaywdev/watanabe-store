@@ -1,0 +1,101 @@
+.entry-content{
+    .contact{
+        background-color: $color__background-green;
+        padding: 1.5rem 1.5rem 4rem;
+        position: relative;
+
+        @include mq($mq670){
+            display:inline-grid;
+            width:100%;
+            grid-template-columns: 25% 50% 25%;
+            align-items: center;
+            justify-items: center;
+        }
+     
+        .cicon{         
+            background-repeat: no-repeat;
+            width: 5rem;
+            height: 5rem;
+            display:block; 
+            background-position: center center;
+            -webkit-mask-position: center center;
+            -webkit-mask-size: contain;
+            mask-size:contain;
+            mask-repeat: no-repeat;
+        }
+        .icon1{
+            display:none;
+
+            @include mq($mq670){
+                display: block;
+                background-color: $color__green;
+                mask-image:url(images/contact/basket.svg);
+                -webkit-mask-image:url(images/contact/basket.svg);
+            }
+        }
+        .icon2{
+            display:none;
+            @include mq($mq670){
+            display: block;
+            background-color: $color__green;
+            mask-image:url(images/contact/grocery.svg);
+            -webkit-mask-image:url(images/contact/grocery.svg);
+            }
+        }
+        .hang{
+            background-image:url(images/contact/hanger.svg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 3rem;
+            display:block;
+            background-size: auto 3rem;
+            background-position: center;
+            margin-bottom: -5px;
+        }
+        .contact-text-wrapper{
+            color:$color__green;
+            text-align: center;
+            background-color: white;
+            padding: 2.2rem 0.625rem;
+            border: 3px solid $color__green;
+            position: relative;
+            z-index: 1;
+            max-width: 18.75rem;
+            margin: 0 auto;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                right: 5px;
+                bottom: 5px;
+                border: 1px solid $color__green;
+            }
+            h3{
+                margin-top:0;
+                margin-bottom: 0.5rem;
+                font-size:1.05rem;
+            }
+            p{
+                font-weight: 900;
+                font-size: 1.375rem;
+                margin: 0;
+            }
+        }
+       
+    }
+    .flower{
+        background-image:url(images/contact/flower.svg);
+        background-repeat: repeat-x;
+        width: 100%;
+        height: 5rem;
+        display: block;
+        background-size: contain;
+        margin-top: -3.5rem;
+        z-index: 1;
+        position: relative;
+        margin-bottom: -1px;
+    } 
+    
+}

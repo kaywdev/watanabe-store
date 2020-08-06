@@ -1,0 +1,22 @@
+.site-footer{
+    background-color: $color__green;
+    color:$color__lightgray;
+    .site-info{
+        text-align: center;
+        padding: 10px 0px;
+        &:lang(en){
+            font-family: $font__main-en;
+        }
+        p{
+            margin:0;
+        }
+        @include mq($mq670){
+            display: inline-flex;
+            justify-content: center;
+            width: 100%;
+            p:first-child{
+                padding-right: 10px;
+            }
+        }
+    }
+}

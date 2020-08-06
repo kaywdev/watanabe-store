@@ -1,12 +1,13 @@
 .site-header{
-    position: relative;;
+    position: relative;
+    margin-bottom: -0.5rem;
     .roof{
         background-image:url(images/header/roof.png);
         background-repeat: repeat-x;
         width: 100%;
-        height: 4.25rem;
-        display:block;
-        background-size: auto 4.25rem;
+        height: 5rem;
+        display: block;
+        background-size: contain;
     }
    .header-wrapper{
         transform: translateY(-0.5rem);
@@ -18,6 +19,11 @@
                     "est lang";
                 align-items: center;
                 padding: 0 1.25rem;
+
+                @include mq($mq670){
+                    grid-template-areas: 
+                    "est banner lang";
+                }
                
             .est{
                 @include en-serif-heading();
@@ -68,7 +74,11 @@
                     height: 100%;
                     display: flex;
                     align-items: center;
-                    justify-content: center
+                    justify-content: center;
+
+                    @include mq($mq670){
+                        justify-content: left;
+                    }
                 }
             }
         }

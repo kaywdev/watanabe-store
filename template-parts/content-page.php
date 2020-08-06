@@ -28,20 +28,26 @@
 		);
 		?>
 		<div class="contact" id="contact">
-		<?php $locale = get_locale(); 
-			  if($locale == 'ja'):?>
-				<div class="contact-text-wrapper text-jp">
-					<h3 lang="ja">配達依頼・問い合わせはコチラ</h3>
-		<?php elseif($locale == 'en_US'):?>
-				<div class="contact-text-wrapper text-en">
-					<h3 lang="en">Contact Us</h3>
-				<?php endif;?>
-					<p>TEL: 047-464-3312</p>
-					<p>FAX: 047-464-3337</p>
-				</div><!-- .contact-text-wrapper-->
+			<div class="cicon icon1"></div><!-- .sicon1-->
+			<div class="contact-info">
+				<div class="hang"></div><!-- .hang-->
+			<?php $locale = get_locale(); 
+				if($locale == 'ja'):?>
+					<div class="contact-text-wrapper text-jp">
+						<h3 lang="ja">配達依頼・問い合わせはコチラ</h3>
+			<?php elseif($locale == 'en_US'):?>
+					<div class="contact-text-wrapper text-en">
+						<h3 lang="en">Contact Us</h3>
+					<?php endif;?>
+						<p>TEL: 047-464-3312</p>
+						<p>FAX: 047-464-3337</p>
+					</div><!-- .contact-text-wrapper-->
+				</div><!-- .contact-info-->
+			<div class="cicon icon2"></div><!-- .sicon2-->
 		</div> <!-- .contact-->
+		<div class="flower"></div><!-- .flower-->
 	</div><!-- .entry-content -->
-
+	
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php

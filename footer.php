@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+		<div class="site-info" lang="en">
 			<p>Copyright © <?php echo date("Y"); ?> Watanabe Store Co.,Ltd.</p>
 			<p> All right reserved.</p>
 		</div><!-- .site-info -->
