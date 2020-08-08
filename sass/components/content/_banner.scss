@@ -1,0 +1,97 @@
+.site-main{
+    .entry-header{
+        display:none;
+    }
+    .entry-content{
+        .wp-block-cover{
+            overflow: initial;
+            min-height: 430x;
+            @include mq($mq600){
+                min-height: 500px;
+            }
+            @include mq($mq1024){
+                min-height: 675px;
+            }
+            @include mq($mq1600){
+                min-height: 755px;
+            }
+            &::after{
+                content:'';
+                position: absolute;
+                bottom:-2.5rem;
+                width: 100%;
+                height: 4rem;
+                background-image:url(images/banner/banner-w-mb.svg);
+                background-repeat: no-repeat;
+                background-position: bottom;
+                z-index: 1;
+                background-size: 100% auto;
+
+                @include mq($mq500){
+                    margin-bottom: -14%;
+                    bottom: 0;
+                }
+                @include mq($mq600){
+                    margin-bottom: -8%;
+                    background-image:url(images/banner/banner-w-tb.svg);
+                }
+            }
+            .wp-block-cover__inner-container{
+                @include mq($mq500){
+                    transform: translateY(-8%);
+                }
+                @include mq($mq1024){
+                    padding: 0 5%;
+                    transform: translateY(-15%);
+                }
+
+                p{
+                    font-family: $font__heading-jp;
+                    font-size: 2.4rem;
+                    line-height: 1;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #ffffff;
+                    margin-top:0;
+                    margin-bottom: 1.5rem;
+
+                    &:first-of-type,
+                    &:last-of-type{
+                        max-width:13rem;
+                    }
+
+                    &:nth-of-type(2){
+                        max-width:16rem;
+                    }
+            
+                    span{
+                        font-family: $font__heading-en;
+                        font-size:2.3rem;
+                    }
+                    
+                }
+                @include mq($mq1024){
+                    p{
+                        font-size: 3.4rem;
+                        margin-bottom: 3rem;
+                        br{
+                            display:none;
+                        }
+                        span{
+                            font-size:3.3rem;
+                        }
+                    }
+                    p.banner-sp{
+                        max-width:29rem;
+                    }
+                    p.banner-deli{
+                        max-width:34rem;
+                    }
+                    p.banner-hm{
+                        max-width:35rem;
+                    }
+                   
+                }
+            }
+        }
+    }
+}

@@ -7,13 +7,17 @@
 // Media Query Breakpoints
 $mq1920:em(1920); //desktoplarge
 $mq1600:em(1600); //desktopsmall
+$mq1350:em(1350); //special tag bp
 $mq1200:em(1200); //laptop
+$mq1100:em(1100); // bp for deli-apt
 $mq1024:em(1024); //tabletLandscape
 $mq1000:em(1000);//tabletPortraitLarge
+$mq900:em(900);//bp for iframe
 $mq850:em(850);//tabletPortrait
 $mq768:em(768); //ipad Portrait
 $mq670:em(670);//phoneLandscape
 $mq615:em(615);//phoneLandscapeSmall
+$mq600:em(600);//bp for 2 columns
 $mq500:em(500);//phonePortraitLarge
 $mq420:em(420);//phonePortrait
 $mq400:em(400); //iphone 6 plus

@@ -18,11 +18,15 @@
                     "banner banner"
                     "est lang";
                 align-items: center;
-                padding: 0 1.25rem;
+                padding: 0 5%;
 
                 @include mq($mq670){
                     grid-template-areas: 
                     "est banner lang";
+                }
+
+                @include mq($mq1024){
+                    padding: 0 8%;
                 }
                
             .est{
@@ -31,6 +35,10 @@
                 grid-area:est;
                 margin: 0;
                 font-size: 1.2rem;
+
+                @include mq($mq1024){
+                    font-size:1.5rem;
+                }
             }
             .top-banner{
                 grid-area: banner;
@@ -70,15 +78,29 @@
             .site-title{
                 margin: 0;
                 .logo-wrapper {
-                    padding: 0.7rem 1.25rem;
+                    padding: 0.7rem 5%;
                     height: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
-                    @include mq($mq670){
+                    @include mq($mq500){
                         justify-content: left;
                     }
+                    @include mq($mq1024){
+                        padding: 0.7rem 8%;
+                    }
+
+                    img{
+                        @include mq($mq1024){
+                            height:3rem;
+                        }
+                        @include mq($mq1200){
+                            height:3.75rem;
+                        }
+
+                    }
+
                 }
             }
         }

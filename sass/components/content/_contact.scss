@@ -3,24 +3,34 @@
         background-color: $color__background-green;
         padding: 1.5rem 1.5rem 4rem;
         position: relative;
-
+        text-align: center;
+        .contact-wrapper{
         @include mq($mq670){
             display:inline-grid;
             width:100%;
             grid-template-columns: 25% 50% 25%;
             align-items: center;
             justify-items: center;
+            max-width: 61.5rem;
         }
      
         .cicon{         
-            width: 5rem;
-            height: 5rem;
+            width: 6rem;
+            height: 6rem;
             display:block; 
             mask-position: center center;
             -webkit-mask-position: center center;
             -webkit-mask-size: contain;
             mask-size:contain;
             mask-repeat: no-repeat;
+            @include mq($mq1000){
+                width: 6.5rem;
+                height: 6.5rem; 
+            }
+            @include mq($mq1100){
+                width: 7rem;
+                height: 7rem; 
+            }
         }
         .icon1{
             display:none;
@@ -51,7 +61,7 @@
             background-position: center;
             margin-bottom: -5px;
         }
-        .contact-text-wrapper{
+        .contact-text-wrapper.text-jp{
             color:$color__green;
             text-align: center;
             background-color: white;
@@ -62,6 +72,15 @@
             max-width: 18.75rem;
             margin: 0 auto;
 
+            @include mq($mq850){
+                max-width:25rem;
+                padding: 2.2rem 1.5rem;
+            }
+            @include mq($mq1024){
+                max-width:30rem;
+                
+            }
+
             &::after{
                 content: '';
                 position: absolute;
@@ -71,19 +90,35 @@
                 bottom: 5px;
                 border: 1px solid $color__green;
             }
-            h3{
+             >h3{
                 margin-top:0;
                 margin-bottom: 0.5rem;
-                font-size:1.05rem !important;
+                font-size:1.05rem ;
+                font-family: $font__main-jp;
+
+                @include mq($mq850){
+                    font-size:1.5rem;
+                }
+
+                @include mq($mq1024){
+                    font-size:1.7rem;
+                }
             }
            
             p{
                 font-weight: 900;
                 font-size: 1.375rem;
                 margin: 0;
+
+                @include mq($mq850){
+                    font-size:1.625rem;
+                }
+                @include mq($mq1024){
+                    font-size:2rem;
+                }
             }
         }
-        
+    }   
        
     }
     .flower{
