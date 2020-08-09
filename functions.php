@@ -212,6 +212,21 @@ function custom_bogo_language_title_name( $links ) {
 }
 add_filter( 'bogo_language_switcher_links', 'custom_bogo_language_title_name', 10, 2 );
 
+/**
+ * Add class to body tag
+ */
 
+function custom_class( $classes ) {
+    if ( is_page(32) || is_page(56) ) {
+        $classes[] = 'delivery';
+    }else if(is_page(65) || is_page(70)){
+		$classes[] = 'homemade';
+	}else if(is_page(72)|| is_page(82)){
+		$classes[] = 'about';
+	}	  	  
+    return $classes;
+}
+add_filter( 'body_class', 'custom_class' );
+add_filter( 'post_class', 'custom_class' );
 
 

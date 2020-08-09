@@ -51,73 +51,81 @@
             -webkit-mask-image:url(images/contact/grocery.svg);
             }
         }
-        .hang{
-            background-image:url(images/contact/hanger.svg);
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 3rem;
-            display:block;
-            background-size: auto 3rem;
-            background-position: center;
-            margin-bottom: -5px;
-        }
-        .contact-text-wrapper.text-jp{
-            color:$color__green;
-            text-align: center;
-            background-color: white;
-            padding: 2.2rem 0.625rem;
-            border: 3px solid $color__green;
-            position: relative;
-            z-index: 1;
-            max-width: 18.75rem;
-            margin: 0 auto;
-
-            @include mq($mq850){
-                max-width:25rem;
-                padding: 2.2rem 1.5rem;
+        
+        .contact-info{
+            .hang{
+                background-image:url(images/contact/hanger.svg);
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 3rem;
+                display:block;
+                background-size: auto 3rem;
+                background-position: center;
+                margin-bottom: -5px;
             }
-            @include mq($mq1024){
-                max-width:30rem;
+            .contact-text-wrapper{
+                color:$color__green;
+                text-align: center;
+                background-color: white;
+                padding: 2.2rem 0.625rem;
+                border: 3px solid $color__green;
+                position: relative;
+                z-index: 1;
+                max-width: 18.75rem;
+                margin: 0 auto;
+
+                >h3{
+                    margin-top:0;
+                    margin-bottom: 0.5rem;
+                    font-size:1.05rem;
+                    font-family: $font__main-jp;
+
+                    @include mq($mq850){
+                        font-size:1.5rem;
+                    }
+
+                    @include mq($mq1024){
+                        font-size:1.7rem;
+                    }
+                }
+                @include mq($mq670){
+                    padding: 2rem 1.5rem;
+                }
+
+                @include mq($mq850){
+                    max-width:25rem;
+                    padding: 2.2rem 1.5rem;
+                }
+                @include mq($mq1024){
+                    max-width:30rem;
+                    
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    right: 5px;
+                    bottom: 5px;
+                    border: 1px solid $color__green;
+                }
                 
-            }
+            
+                p{
+                    font-weight: 900;
+                    font-size: 1.375rem;
+                    margin: 0;
 
-            &::after{
-                content: '';
-                position: absolute;
-                top: 5px;
-                left: 5px;
-                right: 5px;
-                bottom: 5px;
-                border: 1px solid $color__green;
-            }
-             >h3{
-                margin-top:0;
-                margin-bottom: 0.5rem;
-                font-size:1.05rem ;
-                font-family: $font__main-jp;
-
-                @include mq($mq850){
-                    font-size:1.5rem;
+                    @include mq($mq850){
+                        font-size:1.625rem;
+                    }
+                    @include mq($mq1024){
+                        font-size:2rem;
+                    }
                 }
-
-                @include mq($mq1024){
-                    font-size:1.7rem;
-                }
-            }
-           
-            p{
-                font-weight: 900;
-                font-size: 1.375rem;
-                margin: 0;
-
-                @include mq($mq850){
-                    font-size:1.625rem;
-                }
-                @include mq($mq1024){
-                    font-size:2rem;
-                }
-            }
-        }
+            }           
+        }      
     }   
        
     }
@@ -134,4 +142,32 @@
         margin-bottom: -1px;
     } 
     
+}
+
+//En versiton
+body.en-US{
+    .entry-content{
+        .contact{
+            .contact-wrapper{
+                .contact-info{
+
+                    .contact-text-wrapper.text-en{
+                        >h3{
+                            font-family:$font__main-en;
+                            text-transform: uppercase;
+                            font-size:1.315rem;
+
+                            @include mq($mq1024){
+                                font-size:1.6rem;
+                            }
+                        }
+                        p{
+                            font-family:$font__main-en;
+                        }
+                    }
+                }
+            }
+          
+        }
+    }
 }

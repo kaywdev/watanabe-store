@@ -1,0 +1,338 @@
+.entry-content{
+    .special{
+        background-color: $color__background-green-lighter;
+        padding: 1.5rem 0 2rem;
+        .wp-block-group__inner-container{
+            
+          
+            @include mq($mq420){
+                padding: 0 5%;
+            }
+            .special-wrapper{
+                .wp-block-group__inner-container{
+                    .wp-block-columns{
+                        align-items: center;
+                        max-width: 1300px;
+                        margin: 0 auto;
+                        .sp-img{
+                            padding: 1rem 0 2rem;
+                            max-width: 35rem;
+                            @include mq($mq1350){
+                            margin-left: 4rem;
+                            }
+                        }
+                        .sp-tag{
+                            .wp-block-group{
+                                background-color: $color__spt-yellow;
+                                max-width: 25rem;
+                                margin:0 auto;
+
+                            
+
+                                @include mq($mq1200){
+                                    max-width: 32rem; 
+                                }
+                                .wp-block-group__inner-container{
+                                    font-family: $font__sptag-jp;
+                                    position: relative;
+                                    padding: 2rem 2rem 1rem;
+                                    width:100%;
+                                    display: inline-grid;
+                                    grid-template-areas: 
+                                    "title title"
+                                    "produce produce"
+                                    "comment product"
+                                    "product-count price";
+                                    align-items: center;
+                                     @include mq($mq600){
+                                         grid-template-columns: 20% 1fr;
+                                     }
+                                     @include mq($mq670){
+                                        grid-template-columns: 25% 1fr;
+                                     }
+
+                                
+                                    &::after{
+                                        content:'';
+                                        position: absolute;
+                                        top:50%;
+                                        left:50%;
+                                        transform: translate(-50%, -50%);
+                                        width: 90%;
+                                        height: 87%;
+                                        border: 5px solid $color__spt-red;
+                                    }
+
+                                    h4{
+                                        color:$color__spt-red;
+                                        font-size:2.3rem;
+                                        text-align: center;
+                                        margin:0;
+                                        grid-area:title;
+                                        line-height: 1;
+                                        @include mq($mq600){
+                                            font-size:2rem;
+                                        }
+                                        @include mq($mq1024){
+                                            font-size:3rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:3.5rem;
+                                        }
+                                    }
+                                    p{
+                                        margin:0;
+                                    }
+                                    .produce{
+                                        grid-area:produce;
+                                        font-size: 1.5rem;
+                                        @include mq($mq600){
+                                            font-size:1.2rem;
+                                        }
+                                        @include mq($mq768){
+                                            font-size:1.8rem;
+                                        }
+                                        @include mq($mq1024){
+                                            font-size:2rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:2.5rem;
+                                        }
+                                    }
+                                    .product{
+                                        grid-area:product;
+                                        font-size:2.4rem;
+                                        justify-self: end;
+                                        @include mq($mq370){
+                                            font-size:2.8rem;
+                                        }
+                                        @include mq($mq500){
+                                            font-size:2.6rem;
+                                        }
+                                        @include mq($mq600){
+                                            font-size:1.6rem;
+                                        }
+                                        @include mq($mq670){
+                                            font-size:1.75rem;
+                                        }
+                                        @include mq($mq768){
+                                            font-size:2rem;
+                                        }
+                                        @include mq($mq850){
+                                            font-size:2.45rem;
+                                        }
+
+                                        @include mq($mq900){
+                                            font-size:2.65rem;
+                                        }
+                                        
+                                        @include mq($mq1024){
+                                            font-size:3rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:4rem;
+                                        }
+                                    }
+                                    .product-count{
+                                        grid-area:product-count;
+                                        font-size:2rem;
+                                        color:$color__spt-red;
+                                        @include mq($mq600){
+                                            font-size:1rem;
+                                        }
+                                        @include mq($mq670){
+                                            font-size:1.15rem;
+                                        }
+                                        @include mq($mq768){
+                                            font-size:1.5rem;
+                                        }
+                                        @include mq($mq1024){
+                                            font-size:2rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:2.5rem;
+                                        }
+                                    }
+                                    .price{
+                                        grid-area:price;
+                                        font-size:4rem;
+                                        color:$color__spt-red;
+                                        justify-self: end;
+                                        line-height: 1.2;
+                                        @include mq($mq370){
+                                            font-size:4.5rem;
+                                        }
+                                        @include mq($mq600){
+                                            font-size:3rem;
+                                        }
+                                        @include mq($mq670){
+                                            font-size:3.5rem;
+                                        }
+                                        @include mq($mq768){
+                                            font-size:4rem;
+                                        }
+                                        @include mq($mq1024){
+                                            font-size:5rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:6.5rem;
+                                        }
+                                    }
+                                    .comment{
+                                        grid-area:comment;
+                                        color:$color__spt-red;
+                                        font-size: 1.5rem;
+                                        transform: rotate(-23deg);
+                                        @include mq($mq600){
+                                            font-size:0.85rem;
+                                        }
+                                        @include mq($mq670){
+                                            font-size:1rem;
+                                        }
+                                        @include mq($mq768){
+                                            font-size:1.5rem;
+                                        }
+                                        @include mq($mq1024){
+                                            font-size:2rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:2.5rem;
+                                        }
+                                    }
+                                }
+                            }
+                        
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+//EN Version
+body.en-US{
+    .entry-content{
+        .special{
+            .wp-block-group__inner-container{
+                .wp-block-group.special-wrapper{
+                    .wp-block-columns{
+                        .sp-tag{   
+                            .wp-block-group{
+                                .wp-block-group__inner-container{
+                                    font-family:$font__sptag-en;
+                                    @include mq($mq600){
+                                        grid-template-columns: 25% 1fr;
+                                        padding:8% 10%;
+                                    }
+
+                                    p.produce{
+                                        @include mq($mq600){
+                                            margin-top:5px;
+                                            font-size:1rem;
+                                        } 
+                                        @include mq($mq670){
+                                            font-size:1.2rem;
+                                        } 
+                                        @include mq($mq850){
+                                            font-size:1.5rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:2rem;
+                                        }
+                                    }
+                                    p.product{
+                                        font-size: 2.5rem;
+                                        @include mq($mq500){
+                                            font-size:3rem;
+                                        }
+                                        @include mq($mq600){
+                                            font-size:1.7rem;
+                                        }
+                                        @include mq($mq670){
+                                            font-size:2rem;
+                                        }
+                                        @include mq($mq768){
+                                            font-size:2.2rem;
+                                        }
+                                        @include mq($mq850){
+                                            font-size:2.7rem;
+                                        }
+                                        @include mq($mq1024){
+                                            font-size:3.3rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:4rem;
+                                        }
+                                    }
+                                    p.product-count{
+                                        font-size: 1.65rem;
+                                        @include mq($mq600){
+                                            font-size:0.8rem;
+                                        }
+                                        @include mq($mq670){
+                                            font-size:1rem;
+                                        }
+                                        @include mq($mq850){
+                                            font-size:1.2rem;
+                                        }
+                                        @include mq($mq1024){
+                                            font-size:1.8rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:2rem;
+                                        }
+                                    }
+                                    p.price{
+                                        font-size:3.4rem;
+                                        @include mq($mq500){
+                                            font-size:4.2rem;
+                                        }
+                                        @include mq($mq600){
+                                            font-size:2.4rem;
+                                        }
+                                        @include mq($mq670){
+                                            font-size:2.8rem;
+                                        }
+                                        @include mq($mq768){
+                                            font-size:3.2rem;
+                                        }
+                                        @include mq($mq850){
+                                            font-size:3.8rem;
+                                        }
+                                        @include mq($mq1024){
+                                            font-size:4.5rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:5.5rem;
+                                        }
+                                    }
+                                    p.comment{
+                                        font-size:1.25rem;
+                                        @include mq($mq600){
+                                            font-size:0.8rem;
+                                        }
+                                        @include mq($mq670){
+                                            font-size:0.9rem;
+                                        }
+                                        @include mq($mq850){
+                                            font-size:1.2rem;
+                                        }
+                                        @include mq($mq1024){
+                                            font-size:1.5rem;
+                                        }
+                                        @include mq($mq1200){
+                                            font-size:1.8rem;
+                                        }
+                                    }
+                                } 
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

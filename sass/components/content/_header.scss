@@ -1,6 +1,5 @@
 .site-header{
     position: relative;
-    margin-bottom: -0.5rem;
     .roof{
         background-image:url(images/header/roof.png);
         background-repeat: repeat-x;
@@ -10,99 +9,151 @@
         background-size: contain;
     }
    .header-wrapper{
-        transform: translateY(-0.5rem);
+        position: relative;
         .header-top{
-                width:100%;
-                display: inline-grid;
-                grid-template-areas: 
-                    "banner banner"
-                    "est lang";
-                align-items: center;
-                padding: 0 5%;
-
-                @include mq($mq670){
+            max-width: 1400px;
+            margin:0 auto;
+            .header-top-inner-wrapper{
+                    width:100%;
+                    display: inline-grid;
                     grid-template-areas: 
-                    "est banner lang";
-                }
-
-                @include mq($mq1024){
-                    padding: 0 8%;
-                }
-               
-            .est{
-                @include en-serif-heading();
-                color:$color__green;
-                grid-area:est;
-                margin: 0;
-                font-size: 1.2rem;
-
-                @include mq($mq1024){
-                    font-size:1.5rem;
-                }
-            }
-            .top-banner{
-                grid-area: banner;
-                text-align: center;
-                font-size:1.12rem;
-            }
-            .bogo-language-switcher{
-                display:flex;
-                grid-area: lang;
-                padding:0;
-                margin:0;
-                justify-self: end;
-                        a{
-                            text-decoration: none;
-                            @include en-serif-heading();
-                            color:#B4B4B4;
-                            padding: 0px 5px;
-                        }
-                        a.current{
-                            color:$color__green;;
-                        }
-                    
-                .ja{
-                    order:1;
-                    &::after{
-                        content:'/';
-                    }
-                }
-                .en-US{
-                    order:2;
-                }
-            }
-        }
-
-        .site-branding{
-            background-color:$color__green;
-            .site-title{
-                margin: 0;
-                .logo-wrapper {
-                    padding: 0.7rem 5%;
-                    height: 100%;
-                    display: flex;
+                        "banner banner"
+                        "est lang";
                     align-items: center;
-                    justify-content: center;
+                    padding: 0 5%;
 
-                    @include mq($mq500){
-                        justify-content: left;
+                    @include mq($mq670){
+                        grid-template-areas: 
+                        "est banner lang";
                     }
+
                     @include mq($mq1024){
-                        padding: 0.7rem 8%;
+                        padding: 0 8%;
                     }
+                
+                .est{
+                    @include en-serif-heading();
+                    color:$color__green;
+                    grid-area:est;
+                    margin: 0;
+                    font-size: 1.2rem;
 
-                    img{
-                        @include mq($mq1024){
-                            height:3rem;
-                        }
-                        @include mq($mq1200){
-                            height:3.75rem;
-                        }
-
+                    @include mq($mq1024){
+                        font-size:1.5rem;
                     }
+                }
+                .top-banner{
+                    grid-area: banner;
+                    text-align: center;
+                    font-size:1.12rem;
+                }
+                .bogo-language-switcher{
+                    display:flex;
+                    grid-area: lang;
+                    padding:0;
+                    margin:0;
+                    justify-self: end;
+                            a{
+                                text-decoration: none;
+                                @include en-serif-heading();
+                                color:#B4B4B4;
+                                padding: 0px 5px;
+                                font-size: 1.2rem;
+                            }
+                            a.current{
+                                color:$color__green;;
+                            }
+                        
+                    .ja{
+                        order:1;
+                        &::after{
+                            content:'/';
+                        }
+                    }
+                    .en-US{
+                        order:2;
+                    }
+                }
+            }    
+        }
+       .header-bottom{
+            margin-top: -1rem;
+            background-color:$color__green;
+            
+            .header-bottom-wrapper{
+                max-width: 1400px;
+                margin:0 auto;
+                position: relative;
+                .site-branding{
+                    h1.site-title{
+                                margin-bottom:0;
+                                margin-top: 1rem;
+                                .logo-wrapper {
+                                    padding: 0.5rem 5%;
+                                    height: auto;
+                                    width:100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
 
+                                    @include mq($mq500){
+                                        justify-content: left;
+                                    }
+                                    @include mq($mq600){
+                                        width:65%;
+                                    }
+                                    @include mq($mq1024){
+                                        padding: 0.7rem 8%;
+                                    }
+
+                                    img{
+                                        @include mq($mq1024){
+                                            height:3rem;
+                                        }
+                                        @include mq($mq1200){
+                                            height:3.75rem;
+                                        }
+
+                                    }
+
+                                }
+                            }
+                    
                 }
             }
         }
+    }
+}
+
+//En ver
+body.en-US{
+    .site-header{
+        .header-wrapper{
+            .header-top {
+                .header-top-inner-wrapper {
+                    .top-banner{
+                        font-size:0.85rem;
+                        @include mq($mq370){
+                            font-size:1rem;
+                        }
+                    }
+                }
+
+            }
+            
+            .site-branding{
+               h1{
+                   .logo-wrapper{
+                       img{
+                           height:2.5rem;
+                           @include mq($mq670){
+                            height:3.2rem; 
+                           }
+                       }
+                   }
+               } 
+            }   
+        }
+       
     }
 }

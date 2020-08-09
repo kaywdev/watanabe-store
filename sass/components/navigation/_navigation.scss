@@ -2,8 +2,12 @@
 	display: block;
 	width: 100%;
 	position: absolute;
-	top:0;
+	top:-5rem;
 	right: 0;
+
+	@include mq($mq1024){
+		position: initial;
+	}
 
 
 	ul {
@@ -79,16 +83,16 @@
 	display: block;
 }
 button.menu-toggle {
-    position: absolute;
+	position: absolute;
+	top:0;
 	right: 0;
-	z-index: 2;
-	@include mq($mq500){
-		top: 0;
-		margin-top: 8.7rem;
-	}
+	z-index: 4;
+	margin-top: -3rem;
+
 	@include mq($mq600){
-		margin-top: 7rem;
+		margin-top: 5.7rem;
 	}
+
 }
 .menu-menu-1-container{
 	ul{
@@ -96,29 +100,42 @@ button.menu-toggle {
 			a{
 				font-family:$font__sptag-jp;
 				color:$color__lightgray;
+				@include mq($mq1024){
+					font-size: 1rem;
+				}
+				@include mq($mq1200){
+					font-size: 1.2rem;
+				}
 			}
 			}
-			@include mq($mq1200){
-				font-size: 1.25rem;
-			}
-		}
-	@include mq($mq1024){
+			
+		@include mq($mq1024){
 			position: absolute;
-			top: 0;
+			bottom: 1.4rem;
 			right: 0;
-			margin-top: 8.5rem;
 			padding-right: 8%;
+		}
+		
 	}
+	
+	
 }
 	
 // After open hm-menu
 .main-navigation.toggled{
+	button.menu-toggle {
+		@include mq($mq600){
+			margin-top: -1.5rem;
+		}
+	}
 	.menu-menu-1-container{
 		background-color: $color__green;
 		height: 100vh;
 		width: 60%;
 		position: absolute;
 		right: 0;
+		top: -3.5rem;
+		z-index: 3;
 		ul#primary-menu {
 			top: 50%;
 			left: 50%;
@@ -127,7 +144,7 @@ button.menu-toggle {
 
 			li{
 				padding: 2rem 0;
-				border-bottom: 3px dashed $color__lightgray;
+				border-bottom: 2px dashed $color__lightgray;
 				text-align: center;
 				&:first-child{
 					padding-top:0;
@@ -147,7 +164,7 @@ button.menu-toggle {
 		display: flex;
 		li{
 			&:not(:last-of-type){
-				padding-right:1rem;
+				padding-right:1.2rem;
 			}
 		}
 	}
@@ -172,5 +189,51 @@ button.menu-toggle {
 	.nav-next {
 		text-align: end;
 		flex: 1 0 50%;
+	}
+}
+
+//EN version
+body.en-US{
+	.site-header{
+		.header-wrapper{
+			.header-bottom{
+				.header-bottom-wrapper{
+					.main-navigation{
+						.menu-menu-1-container{
+							ul.nav-menu{
+								li{
+									&:not(:last-of-type){
+
+										@include mq($mq1350){
+											padding-right:1.5rem;
+										}
+									}
+									a{
+										font-family:$font__heading-en; 
+										font-size:1.2rem;
+										@include mq($mq1600){
+											font-size:1.4rem;
+										}
+									}
+								}
+							}
+						}	
+					}
+					nav.main-navigation.toggled{
+						.menu-menu-1-container{
+							ul{
+								li{
+									width:65%;
+									margin:0 auto;
+									a{
+										font-family:$font__heading-en; 
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

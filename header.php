@@ -29,8 +29,9 @@
 		<div class="roof"></div><!-- .roof -->
 		<div class="header-wrapper">
 			<div class="header-top">
-				<p class="est" lang="en">Since 1958</p>
-				<!-- Top Banner Nav -->
+				<div class="header-top-inner-wrapper">
+					<p class="est" lang="en">Since 1958</p>
+					<!-- Top Banner Nav -->
 					<div class = "top-banner">
 						<?php if( function_exists( 'get_field' ) ):
 							$topBanner_jp = get_field('header_banner_jp', 'option');
@@ -45,48 +46,50 @@
 					</div>
 
 				<?php echo do_shortcode('[bogo]'); ?>
+				</div><!-- .header-top-inner-wrapper-->
 			</div>
 			<!-- .header-top-->
-			<div class="site-branding">
-				<?php
-				the_custom_logo();
+			<div class="header-bottom">
+				<div class="header-bottom-wrapper">
+					<div class="site-branding">
+						<?php the_custom_logo();?>
+							<h1 class="site-title">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<?php if( function_exists( 'get_field' ) ):
+									$logo_jp = get_field('logo_jp', 'option');
+									$logo_en = get_field('logo_en', 'option');
+									$locale = get_locale();
+									$image_jp = wp_get_attachment_image_src($logo_jp);
+									$image_en = wp_get_attachment_image_src($logo_en);
+									if($locale == 'ja'){
+									?>
+										<div class="logo-wrapper">
+											<img src="<?php if( $image_jp[0] ) { echo $image_jp[0]; } ?>"/>
+										</div>
+									<?php
+									}elseif($locale == 'en_US'){ ?>
+										<div class="logo-wrapper">
+											<img src="<?php if( $image_en[0] ) { echo $image_en[0]; } ?>"/>
+										</div>
+									<?php
+									} 
+									endif; ?>
+								</a>
+							</h1>
+					</div><!-- .site-branding -->
 				
-					?>
-					<h1 class="site-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php if( function_exists( 'get_field' ) ):
-							$logo_jp = get_field('logo_jp', 'option');
-							$logo_en = get_field('logo_en', 'option');
-							$locale = get_locale();
-							$image_jp = wp_get_attachment_image_src($logo_jp);
-							$image_en = wp_get_attachment_image_src($logo_en);
-							if($locale == 'ja'){
-							?>
-								<div class="logo-wrapper">
-									<img src="<?php if( $image_jp[0] ) { echo $image_jp[0]; } ?>"/>
-								</div>
-							<?php
-							}elseif($locale == 'en_US'){ ?>
-								<div class="logo-wrapper">
-									<img src="<?php if( $image_en[0] ) { echo $image_en[0]; } ?>"/>
-								</div>
-							<?php
-							} 
-							endif; ?>
-						</a>
-					</h1>
-			
-			</div><!-- .site-branding -->
+					<nav id="site-navigation" class="main-navigation">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'watanabestore' ); ?></button>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'primary-menu',
+							)
+						);
+						?>
+					</nav><!-- #site-navigation -->
+				</div><!-- .header-bottom-wrapper -->
+			</div><!-- .header-bottom -->
 		</div><!-- .header-wrapper -->
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'watanabestore' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

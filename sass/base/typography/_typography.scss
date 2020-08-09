@@ -13,8 +13,21 @@ body:lang(ja){
 	font-family: $font__main-jp;
 }
 body.en-US,
-body:lang(en-US){
+body:lang(en-US),
+body:lang(en){
 	font-family: $font__main-en;
+}
+
+body.en-US{
+	article.en-US{
+		.wp-block-group__inner-container,
+		.wp-block-column{
+			>h3{
+				font-family: $font__heading-en !important;
+				font-size:1.75rem;
+			}
+		}
+	}
 }
 
 
