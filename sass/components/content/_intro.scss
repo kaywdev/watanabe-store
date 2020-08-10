@@ -1,9 +1,10 @@
 p.intro{
     font-family: $font__heading-jp;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     text-align: center;
     position: relative;
     z-index: 2;
+    padding: 0 5%;
     span{
         font-size:2rem;
     }
@@ -12,18 +13,54 @@ p.intro{
             display:none;
         }
     }
+    @include mq($mq600){
+        max-width:42.3rem;
+        margin:2rem auto;
+    }
     @include mq($mq1024){
         font-size:2rem;
-        padding: 2rem 0;
+        max-width:52rem;
         span{
             font-size:3rem;
         }
     }
+    @include mq($mq1240){
+        max-width:63rem;
+    }
+    
     @include mq($mq1600){
         font-size:2.5rem;
         padding: 2.5rem 0;
         span{
             font-size:4rem;
+        }
+    }
+}
+.delivery{
+    .entry-content{
+        p.intro{
+            font-size:1.34rem;
+            br:nth-of-type(2){
+                display:none;
+                @include mq($mq670){
+                    display:block;
+                }
+            }
+            @include mq($mq600){
+                max-width:45rem;    
+            }
+
+            @include mq($mq1024){
+                max-width:63rem;
+                font-size:1.5rem; 
+            }
+            @include mq($mq1350){
+                max-width:68rem;
+                font-size:2rem;
+            }
+            @include mq($mq1600){
+                font-size:2.3rem; 
+            }
         }
     }
 }
