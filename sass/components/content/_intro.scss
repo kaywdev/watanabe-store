@@ -93,4 +93,13 @@ body.en-US{
             }
         }
     }
+    .en-US.delivery{
+        .entry-content{
+            p.intro{
+                @include mq($mq1600){
+                  min-width:75rem;
+                }
+            }
+        }
+    }
 }

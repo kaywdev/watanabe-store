@@ -50,7 +50,7 @@
                     h3{
                         color:$color__brown;
                         font-size:1.5rem;
-                        margin-bottom:0;
+                        margin-bottom:0.5rem;
                         margin-top:1rem;
                     }
                     p{
@@ -59,8 +59,21 @@
                     }
                     .deli-apt-text,
                     .deli-hr-text{
+                        line-height: 56px;
+                        @include mq($mq600){
+                            line-height: 1.5;
+                        }
                         br{
                             display:none;
+                            @include mq($mq600){
+                                display:block;
+                                @include mq($mq1350){
+                                    display:none;
+                                }
+                            }
+                            @include mq($mq1350){
+                                line-height: 66px;
+                            }
                         }
                     }
 
@@ -106,6 +119,7 @@
                         }
                     }
                     .deli-info-top{
+                        margin-bottom:0;
                         @include mq($mq600){
                             flex-wrap: nowrap;
                             margin-bottom:1rem;
@@ -150,7 +164,7 @@
                                 p{
                                     font-size:1rem;
                                     @include mq($mq850){
-                                        font-size:1.4rem;
+                                        font-size:1.5rem;
                                     }
                                     @include mq($mq1200){
                                         font-size:1.8rem;
@@ -160,20 +174,7 @@
                                     }
                                 }
                             }
-                            .deli-apt,
-                            .deli-hr{
-                                p{
-                                    br{
-                                        display:block;
-                                        @include mq($mq1350){
-                                            display:none;
-                                        }
-                                    }
-                                    @include mq($mq1350){
-                                        line-height: 66px;
-                                    }
-                                }
-                            }
+                            
                             .deli-apt{
                                 p{
                                     @include mq($mq1600){
@@ -201,101 +202,172 @@
                     }
                     .deli-info-bottom{
                         @include mq($mq600){
-                            .deli-icon{
-                                width:8.5rem;
-                                height:8.5rem;
-
-                                @include mq($mq1200){
-                                    width:10.5rem;
-                                    height:10.5rem; 
-                                }
-
-                                @include mq($mq1600){
-                                    width:12.25rem;
-                                    height:12.25rem; 
-                                }
-                            }
-                            h3{
-                                font-size:1.375rem;
-                                @include mq($mq850){
-                                    font-size:1.5rem;
-                                    padding-bottom: 0.5rem;
-                                }
-                                @include mq($mq1000){
-                                    font-size:2rem;
-                                }
-                                @include mq($mq1600){
-                                    font-size:2.45rem;
-                                }
-                            }
-                            p{
-                                font-size:1.1rem;
-                                @include mq($mq850){
-                                    font-size:1.4rem;
-                                }
-                                @include mq($mq1000){
-                                    font-size:1.8rem;
-                                }
-                                @include mq($mq1600){
-                                    font-size:2.3rem;
-                                }
-                            }
                             width:100%;
                             display:inline-grid;
                             grid-template-columns: 1fr 1fr;
                             grid-gap:3%;
-                            
-                            div.deli-bottom-left{
+                        }
+                        h3{
+                            @include mq($mq600){
+                                font-size:1.375rem;
+                            }
+                            @include mq($mq850){
+                                font-size:1.5rem;
+                                padding-bottom: 0.5rem;
+                            }
+                            @include mq($mq1000){
+                                font-size:2rem;
+                            }
+                            @include mq($mq1600){
+                                font-size:2.45rem;
+                            }
+                        }
+                        p{
+                            @include mq($mq600){
+                                font-size:1.1rem;
+                            }
+                            @include mq($mq850){
+                                font-size:1.4rem;
+                            }
+                            @include mq($mq1000){
+                                font-size:1.7rem;
+                            }
+                            @include mq($mq1600){
+                                font-size:2.3rem;
+                            }
+                        }
+                        .deli-icon{
+                            @include mq($mq600){
+                            width:8.5rem;
+                            height:8.5rem;
+                            }
+
+                            @include mq($mq1200){
+                                width:10.5rem;
+                                height:10.5rem; 
+                            }
+
+                            @include mq($mq1600){
+                                width:12.25rem;
+                                height:12.25rem; 
+                            }
+                        }
+                        div.deli-bottom-left{
+                            @include mq($mq600){
                                 display:inline-grid;
                                 grid-template-rows: 1fr 1fr;
+                            }
                                 .wp-block-group{
                                     .wp-block-group__inner-container{
+                                        @include mq($mq600){
                                         padding-top:1rem;
-                                        min-width:19rem;
                                         margin:0 auto;
                                         display: inline-flex;
                                         flex-direction: column;
                                         align-items: center;
+                                        }
                                     }
-                                }  
-                            }
-                            .deli-bottom-right{
+                                } 
+                                .deli-fee{
+                                    @include mq($mq600){
+                                    margin-bottom:0 !important;
+                                    }
+                                } 
+                            
+                        }
+                        div.deli-bottom-right{
+                            @include mq($mq600){
                                 margin-left:0;
-                                .wp-block-group.deli-area {
+                            }
+                            
+                            .wp-block-group.deli-area {
+                                @include mq($mq600){
                                     display: inline-flex;
                                     width: 100%;
+                                    height: 100%;
                                     justify-content: center;
-                                    .wp-block-image{
-                                        min-width:18rem;
-                                        @include mq($mq850){
-                                            min-width:22rem;
-                                        }
+                                    margin-bottom: 0;
+                                }
+                                
+                             
+                                .wp-block-image{
+                                    min-width:17rem;
+                                    @include mq($mq370){
+                                        min-width:18rem; 
+                                    }
+                                    @include mq($mq600){
+                                        min-width:16rem; 
+                                    }
+                                    @include mq($mq850){
+                                        min-width:22rem;
                                     }
                                 }
                             }
                         }
+                        
                     }
-                    .deli-prod,
-                    .deli-fee,
-                    .deli-area{
-                        @include mq($mq600){
+                }  
+            }
+        }
+    }
+}
+//En version
+.en-US.delivery{
+    .site-main{
+        .entry-content{
+            .deli-info-wrapper{
+                .wp-block-group__inner-container{
+                    .deli-info-top{
+                        .deli-apt-text,
+                        .deli-hr-text{
+                            line-height: 1.5;
+                            br{
+                                display:block;  
+                            }
+                        }
+                    }
+                    .deli-info-bottom{
+                        .deli-prod-text{
+                            padding: 0 7%;
+                            @include mq($mq370){
+                                padding:0;
+                            }
+                            br{
+                                display:none;
+                                @include mq($mq370){
+                                    display:block;
+                                }
+                            }
+                        }
+                        .deli-bottom-right{
+                            .deli-area{
+                                .wp-block-group__inner-container{
+                                    .deli-area-text{
+                                        text-align: center;
+                                        br{
+                                            display:block;
+                                        }
+                                    }
+                                    figure.wp-block-image{
+                                        @include mq($mq600){
+                                            min-width:18rem; 
+                                        }
+                                        @include mq($mq850){
+                                            min-width:23rem;
+                                        }
+                                        @include mq($mq1024){
+                                            min-width:28rem;
+                                        }
+                                        @include mq($mq1600){
+                                            min-width:34rem;
+                                        }
+                                    }
+                                }
+                            }
                             
                         }
                     }
-                    .deli-area{
-                        @include mq($mq600){
-                            // padding: 5% !important;
-                        }
-                    }
-                    .deli-prod,
-                    .deli-fee{
-                        @include mq($mq600){
-                            
-                        }
-                    }
-                }
-                   
-               
+                } 
             }
         }
     }
