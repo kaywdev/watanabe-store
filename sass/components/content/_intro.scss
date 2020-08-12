@@ -20,12 +20,14 @@ p.intro{
     @include mq($mq1024){
         font-size:2rem;
         max-width:52rem;
+        margin:4rem auto;
         span{
             font-size:3rem;
         }
     }
     @include mq($mq1240){
         max-width:63rem;
+        margin:5rem auto;
     }
     
     @include mq($mq1600){
@@ -64,6 +66,22 @@ p.intro{
         }
     }
 }
+.homemade{
+    .entry-content{
+        p.intro{
+            @include mq($mq1024){
+                font-size:1.5rem; 
+            }
+            @include mq($mq1350){
+                font-size:2rem;
+            }
+            @include mq($mq1600){
+                max-width:60rem;
+                font-size:2.3rem;
+            }
+        }
+    }
+}
 
 body.en-US{
     .site-main{
@@ -98,6 +116,18 @@ body.en-US{
             p.intro{
                 @include mq($mq1600){
                   min-width:75rem;
+                }
+            }
+        }
+    }
+    .en-US.homemade{
+        .entry-content{
+            p.intro{
+                @include mq($mq1024){
+                    min-width:70rem;
+                }
+                @include mq($mq1600){
+                  min-width:85rem;
                 }
             }
         }
