@@ -1,0 +1,421 @@
+.about{
+    .entry-content{
+        .about-sec{
+            .wp-block-group__inner-container{
+                max-width: 1200px;
+                margin:0 auto;
+            }
+            padding:3rem 0;
+            overflow: hidden;
+            h3{
+                font-size:2.2rem;
+                    color:$color__green;
+                    font-family:$font__heading-jp;
+                    margin:0;
+                    @include mq($mq1024){
+                        font-size: 2.5rem;
+                    }
+                    @include mq($mq1600){
+                        font-size: 3.25rem;
+                    }
+            }
+            p{
+                font-size:1.25rem;
+                @include mq($mq1024){
+                    font-size:1.4rem;  
+                }
+                @include mq($mq1100){
+                    font-size:1.5rem;
+                }
+                @include mq($mq1600){
+                    font-size:1.9rem;
+                }
+
+            }
+            
+        }
+        .about-history{
+            background-color:$color__background-green;
+            padding: 3rem 5%;
+            position: relative;
+
+            &::after{
+                content:'';
+                position:absolute;
+                top:50%;
+                left:70%;
+                z-index:0;
+                display:block; 
+                mask-position: center center;
+                -webkit-mask-position: center center;
+                -webkit-mask-size: contain;
+                mask-size:contain;
+                mask-repeat: no-repeat;
+                width: 25rem;
+                height: 25rem;
+                transform: translate(-50%, -50%);
+                background-color: $color__background-green-lighter;
+                mask-image:url(images/icons/about/radish.svg);
+                -webkit-mask-image:url(images/icons/about/radish.svg);
+
+                    @include mq ($mq500){
+                        top: 30%;
+                        left: 50%;
+                    }
+                    @include mq ($mq850){
+                        top: 50%;
+                    }
+                    @include mq ($mq1350){
+                        width: 28rem;
+                        height: 28rem;
+                    }
+                    @include mq ($mq1920){
+                        width: 35rem;
+                        height: 35rem;
+                    }
+                }
+            
+            @include mq($mq600){
+                .about-text-wrapper{
+                    padding: 0;
+                }
+            }
+            .about-inner-wrapper{
+                position: relative;
+                z-index: 1;
+                .wp-block-group__inner-container{
+                   @include mq($mq850){
+                       display:inline-grid;
+                       grid-template-columns: 48% 48%;
+                        grid-gap: 4%;
+                        align-items: flex-start;
+                       .text-inner-wrapper{
+                            .wp-block-group__inner-container{
+                                display:inline-flex;
+                                flex-direction: column;
+                                align-items:center;
+                                p{
+                                    margin-top:0;
+                                }
+                            }
+                       }
+                       figure{
+                           margin:0;
+                       }
+                   } 
+                }
+            }
+        }
+        .about-policy{
+            .policy-wrapper{
+                padding-top:2rem;
+                margin-bottom:0;
+                @include mq($mq600){
+                    display:inline-grid;
+                }
+                @include mq($mq1024){
+                    grid-template-columns:33% 33% 33%;
+                    align-items: start;
+                    padding: 2rem 5% 0;
+                    grid-gap:1%;
+                }
+                @include mq($mq1240){
+                    padding: 2rem 0;
+                }
+                 .wp-block-column{
+                    padding: 0 5%;
+                    @include mq($mq768){
+                        display:inline-grid;
+                        grid-template-columns: 50% 50%;
+                        align-items: center;
+                        &:nth-of-type(2){ 
+                           @include mq($mq1024){
+                            padding-left:0;
+                            padding-right:0;
+                            margin-left:0;
+                           }
+                            ul{
+                                order:0;
+                                @include mq($mq1024){
+                                   order:1;
+                                }
+                            }
+                            .wp-block-cover{
+                                order:1;
+                                @include mq($mq1024){
+                                    order:0;
+                                 }
+                            }
+                        }
+                        &:nth-of-type(3){
+                            @include mq($mq1024){
+                                margin-left:0;
+                               } 
+                        }
+                    }
+                    @include mq($mq1024){
+                        grid-template-columns:initial;
+                        padding:0;
+                    }
+                    
+                     
+                    .about-policy-img{
+                        width:18rem;
+                        height: 18rem;
+                        min-height: initial;
+                        margin: 0 auto;
+                        &::after{
+                            content:none;
+                        }
+                        @include mq($mq370){
+                            min-width:20rem;
+                            min-height:20rem; 
+                        }
+
+                        @include mq($mq1024){
+                            min-width:initial;
+                        }
+                        @include mq($mq1100){
+                            min-width:20rem;
+                            min-height:20rem; 
+                        }
+                        @include mq($mq1240){
+                            min-width:22rem;
+                            min-height:22rem; 
+                        }
+                
+                        .wp-block-cover__inner-container{
+                            @include mq($mq500){
+                                transform:initial;
+                            }
+
+                            p{
+                                font-size:1.5rem; 
+                                text-align: center;
+                                font-family: $font__heading-jp;
+                                font-weight: 700;
+                                @include mq($mq370){
+                                    font-size:1.6rem;    
+                                }
+                                @include mq($mq1024){
+                                    font-size:1.3rem;
+                                }
+                                @include mq($mq1100){
+                                    font-size:1.5rem;
+                                }
+                                @include mq($mq1240){
+                                    font-size:1.7rem;
+                                }
+                                @include mq($mq1350){
+                                    font-size:1.8rem;
+                                }
+
+                                &:lang(en){
+                                    font-family: $font__heading-en;
+                                    font-size:3rem; 
+                                    padding:0;
+                                    @include mq($mq1024){
+                                        font-size:2.5rem;
+                                    }
+                                    @include mq($mq1240){
+                                        font-size:3rem;
+                                    }
+                                }
+                                &::before{
+                                    content:none;
+                                }
+                                span{
+                                    font-size:2.2rem;
+                                    font-family: $font__heading-jp;  
+                                    @include mq($mq370){
+                                        font-size:2.3rem;    
+                                    }
+                                    @include mq($mq1024){
+                                        font-size:1.97rem;    
+                                    }
+                                    @include mq($mq1100){
+                                        font-size:2.2rem;    
+                                    }
+                                    @include mq($mq1240){
+                                        font-size:2.5rem;    
+                                    }
+                                }
+                            }
+                            div.line{
+                                height:2rem;
+                                width:2rem;
+                                position: relative;
+                                margin: 1rem auto;
+                                &::before,
+                                &::after{
+                                    content:'';
+                                    position:absolute;
+                                    width:100%;
+                                    height:3px;
+                                    background-color:white;
+                                    border-radius:3px;
+                                    top:0.5rem;
+                                }
+                                &::before{
+                                    -webkit-transform:rotate(45deg);
+                                    -moz-transform:rotate(45deg);
+                                    transform:rotate(45deg);
+                                }
+                                &::after{
+                                    -webkit-transform:rotate(-45deg);
+                                    -moz-transform:rotate(-45deg);
+                                    transform:rotate(-45deg);
+                                }                               
+                            }
+                        }
+                    }
+                    .policy-list{
+                       
+                        font-size:1.25rem;
+                        min-height: 20rem;
+                        width:100%;
+                        display: inline-flex;
+                        flex-flow: row wrap;
+                        align-content: space-between;
+                        justify-content: center;
+                        position: relative;
+
+                        &::after{
+                            content:'';
+                            position:absolute;
+                            z-index:-1;
+                            display:block; 
+                            mask-position: center center;
+                            -webkit-mask-position: center center;
+                            -webkit-mask-size: contain;
+                            mask-size:contain;
+                            mask-repeat: no-repeat;
+                            width: 16rem;
+                            height: 19rem;
+                            transform: rotate(30deg);
+                            background-color: $color__background-brown-lighter;
+                            mask-image:url(images/icons/about/leaf.svg);
+                            -webkit-mask-image:url(images/icons/about/leaf.svg);
+
+                                @include mq($mq1024){
+                                    transform: rotate(30deg) translate(20%, 20%);  
+                                }
+                                @include mq($mq1920){
+                                    transform: rotate(30deg) translate(30%, 30%);  
+                                }
+                            }
+
+                        @include mq($mq1024){
+                            font-size:1.4rem;  
+                        }
+                        @include mq($mq1100){
+                            font-size:1.5rem;
+                        }
+                        @include mq($mq1600){
+                            font-size:1.9rem;
+                        }
+                        ul{
+                            margin:0;
+                            padding: 10% 3% 10% 10%;
+                            @include mq($mq1024){
+                                padding: 10% 3% 0% 10%;  
+                            }
+                            li{
+                                padding-bottom:1rem;
+                            }
+                        }
+                           
+                        }   
+                
+                }
+            }
+        }
+    }
+}
+.en-US.about{
+    .entry-content{
+        .about-sec{
+            h3{
+                font-size:2.2rem;
+                    margin:0;
+                    @include mq($mq1024){
+                        font-size: 2.5rem;
+                    }
+                    @include mq($mq1600){
+                        font-size: 3.25rem;
+                    }
+            }
+        }
+        .about-policy{
+            .policy-wrapper{
+                .wp-block-column{
+                    .about-policy-img{
+                        
+                        >div.wp-block-cover__inner-container{
+                            @include mq($mq500){
+                                transform:initial;
+                            }
+
+                            p{
+                                font-family: $font__heading-en;
+                                font-size:3rem; 
+                                    padding:0;
+                                    @include mq($mq1024){
+                                        font-size:2.5rem;
+                                    }
+                                    @include mq($mq1240){
+                                        font-size:3rem;
+                                    }
+                                &:first-of-type{
+                                    max-width: initial;
+                                }
+                                &:lang(jp){
+                                    font-size:1.5rem; 
+                                text-align: center;
+                                font-family: $font__heading-jp;
+                                font-weight: 700;
+                                @include mq($mq370){
+                                    font-size:1.6rem;    
+                                }
+                                @include mq($mq1024){
+                                    font-size:1.3rem;
+                                }
+                                @include mq($mq1100){
+                                    font-size:1.5rem;
+                                }
+                                @include mq($mq1240){
+                                    font-size:1.7rem;
+                                }
+                                @include mq($mq1350){
+                                    font-size:1.8rem;
+                                }
+                                span{
+                                    font-size:2.2rem;
+                                    font-family: $font__heading-jp;  
+                                    @include mq($mq370){
+                                        font-size:2.3rem;    
+                                    }
+                                    @include mq($mq1024){
+                                        font-size:1.95rem;    
+                                    }
+                                    @include mq($mq1100){
+                                        font-size:2.2rem;    
+                                    }
+                                    @include mq($mq1240){
+                                        font-size:2.5rem;    
+                                    }
+                                }
+
+                                }
+                                &::before{
+                                    content:none;
+                                }
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -582,17 +582,17 @@ body.en-US .site-main .wp-block-cover .wp-block-cover__inner-container p:nth-of-
 
 @media (min-width: 100em) { body.en-US .site-main .wp-block-cover .wp-block-cover__inner-container p { font-size: 4.2rem; } }
 
-body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main #post-82 .entry-content .wp-block-cover .wp-block-cover__inner-container p { font-size: 3.35rem; line-height: 1.2; }
+body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main .about .entry-content .wp-block-cover .wp-block-cover__inner-container p { font-size: 3.35rem; line-height: 1.2; }
 
-body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main #post-82 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before { top: 4.2rem; }
+body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main .about .entry-content .wp-block-cover .wp-block-cover__inner-container p::before { top: 4.2rem; }
 
-@media (min-width: 64em) { body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main #post-82 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before { top: 5.6rem; } }
+@media (min-width: 64em) { body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main .about .entry-content .wp-block-cover .wp-block-cover__inner-container p::before { top: 5.6rem; } }
 
-@media (min-width: 100em) { body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main #post-82 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before { top: 7.1rem; } }
+@media (min-width: 100em) { body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p::before, body.en-US .site-main .about .entry-content .wp-block-cover .wp-block-cover__inner-container p::before { top: 7.1rem; } }
 
-@media (min-width: 64em) { body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main #post-82 .entry-content .wp-block-cover .wp-block-cover__inner-container p { font-size: 4.5rem; max-width: 16rem; } }
+@media (min-width: 64em) { body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main .about .entry-content .wp-block-cover .wp-block-cover__inner-container p { font-size: 4.5rem; max-width: 16rem; } }
 
-@media (min-width: 100em) { body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main #post-82 .entry-content .wp-block-cover .wp-block-cover__inner-container p { font-size: 5.6rem; max-width: 20rem; } }
+@media (min-width: 100em) { body.en-US .site-main #post-56 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p, body.en-US .site-main .about .entry-content .wp-block-cover .wp-block-cover__inner-container p { font-size: 5.6rem; max-width: 20rem; } }
 
 body.en-US .site-main #post-70 .entry-content .wp-block-cover .wp-block-cover__inner-container p { max-width: 17rem; }
 
@@ -630,11 +630,11 @@ p.intro span { font-size: 2rem; }
 
 @media (min-width: 100em) { .delivery .entry-content p.intro { font-size: 2.3rem; } }
 
-@media (min-width: 64em) { .homemade .entry-content p.intro { font-size: 1.5rem; } }
+@media (min-width: 64em) { .homemade .entry-content p.intro, .about .entry-content p.intro { font-size: 1.5rem; } }
 
-@media (min-width: 84.375em) { .homemade .entry-content p.intro { font-size: 2rem; } }
+@media (min-width: 84.375em) { .homemade .entry-content p.intro, .about .entry-content p.intro { font-size: 2rem; } }
 
-@media (min-width: 100em) { .homemade .entry-content p.intro { max-width: 60rem; font-size: 2.3rem; } }
+@media (min-width: 100em) { .homemade .entry-content p.intro, .about .entry-content p.intro { max-width: 60rem; font-size: 2.3rem; } }
 
 body.en-US .site-main .entry-content p.intro { font-family: "haboro-contrast-condensed", sans-serif; padding: 0 10%; font-size: 1.375rem; }
 
@@ -652,9 +652,9 @@ body.en-US .site-main .entry-content p.intro span { font-size: 1.9rem; }
 
 @media (min-width: 100em) { body.en-US .en-US.delivery .entry-content p.intro { min-width: 75rem; } }
 
-@media (min-width: 64em) { body.en-US .en-US.homemade .entry-content p.intro { min-width: 70rem; } }
+@media (min-width: 100em) { body.en-US .en-US.homemade .entry-content p.intro, body.en-US .en-US.about .entry-content p.intro { min-width: 85rem; } }
 
-@media (min-width: 100em) { body.en-US .en-US.homemade .entry-content p.intro { min-width: 85rem; } }
+@media (min-width: 120em) { body.en-US .en-US.homemade .entry-content p.intro, body.en-US .en-US.about .entry-content p.intro { min-width: 90rem; } }
 
 .entry-content .special { background-color: rgba(18, 106, 66, 0.2); padding: 1.5rem 0 2rem; }
 
@@ -1318,5 +1318,182 @@ body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-gr
 	.en-US.homemade .entry-content .hm-wrapper.hm-veg .hm-text-wrapper ul li:last-of-type { margin-left: 1.45rem !important; } }
 
 @media (min-width: 37.5em) and (min-width: 62.5em) { .en-US.homemade .entry-content .hm-wrapper.hm-veg .hm-text-wrapper ul li:last-of-type { margin-left: 1.75rem !important; } }
+
+.about .entry-content .about-sec { padding: 3rem 0; overflow: hidden; }
+
+.about .entry-content .about-sec .wp-block-group__inner-container { max-width: 1200px; margin: 0 auto; }
+
+.about .entry-content .about-sec h3 { font-size: 2.2rem; color: #126C42; font-family: "source-han-serif-japanese", serif; margin: 0; }
+
+@media (min-width: 64em) { .about .entry-content .about-sec h3 { font-size: 2.5rem; } }
+
+@media (min-width: 100em) { .about .entry-content .about-sec h3 { font-size: 3.25rem; } }
+
+.about .entry-content .about-sec p { font-size: 1.25rem; }
+
+@media (min-width: 64em) { .about .entry-content .about-sec p { font-size: 1.4rem; } }
+
+@media (min-width: 68.75em) { .about .entry-content .about-sec p { font-size: 1.5rem; } }
+
+@media (min-width: 100em) { .about .entry-content .about-sec p { font-size: 1.9rem; } }
+
+.about .entry-content .about-history { background-color: #E9F2E7; padding: 3rem 5%; position: relative; }
+
+.about .entry-content .about-history::after { content: ''; position: absolute; top: 50%; left: 70%; z-index: 0; display: block; mask-position: center center; -webkit-mask-position: center center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; width: 25rem; height: 25rem; transform: translate(-50%, -50%); background-color: rgba(18, 106, 66, 0.2); mask-image: url(images/icons/about/radish.svg); -webkit-mask-image: url(images/icons/about/radish.svg); }
+
+@media (min-width: 31.25em) { .about .entry-content .about-history::after { top: 30%; left: 50%; } }
+
+@media (min-width: 53.125em) { .about .entry-content .about-history::after { top: 50%; } }
+
+@media (min-width: 84.375em) { .about .entry-content .about-history::after { width: 28rem; height: 28rem; } }
+
+@media (min-width: 120em) { .about .entry-content .about-history::after { width: 35rem; height: 35rem; } }
+
+@media (min-width: 37.5em) { .about .entry-content .about-history .about-text-wrapper { padding: 0; } }
+
+.about .entry-content .about-history .about-inner-wrapper { position: relative; z-index: 1; }
+
+@media (min-width: 53.125em) { .about .entry-content .about-history .about-inner-wrapper .wp-block-group__inner-container { display: inline-grid; grid-template-columns: 48% 48%; grid-gap: 4%; align-items: flex-start; }
+	.about .entry-content .about-history .about-inner-wrapper .wp-block-group__inner-container .text-inner-wrapper .wp-block-group__inner-container { display: inline-flex; flex-direction: column; align-items: center; }
+	.about .entry-content .about-history .about-inner-wrapper .wp-block-group__inner-container .text-inner-wrapper .wp-block-group__inner-container p { margin-top: 0; }
+	.about .entry-content .about-history .about-inner-wrapper .wp-block-group__inner-container figure { margin: 0; } }
+
+.about .entry-content .about-policy .policy-wrapper { padding-top: 2rem; margin-bottom: 0; }
+
+@media (min-width: 37.5em) { .about .entry-content .about-policy .policy-wrapper { display: inline-grid; } }
+
+@media (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper { grid-template-columns: 33% 33% 33%; align-items: start; padding: 2rem 5% 0; grid-gap: 1%; } }
+
+@media (min-width: 77.5em) { .about .entry-content .about-policy .policy-wrapper { padding: 2rem 0; } }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column { padding: 0 5%; }
+
+@media (min-width: 48em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column { display: inline-grid; grid-template-columns: 50% 50%; align-items: center; } }
+
+@media (min-width: 48em) and (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column:nth-of-type(2) { padding-left: 0; padding-right: 0; margin-left: 0; } }
+
+@media (min-width: 48em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column:nth-of-type(2) ul { order: 0; } }
+
+@media (min-width: 48em) and (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column:nth-of-type(2) ul { order: 1; } }
+
+@media (min-width: 48em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column:nth-of-type(2) .wp-block-cover { order: 1; } }
+
+@media (min-width: 48em) and (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column:nth-of-type(2) .wp-block-cover { order: 0; } }
+
+@media (min-width: 48em) and (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column:nth-of-type(3) { margin-left: 0; } }
+
+@media (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column { grid-template-columns: initial; padding: 0; } }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img { width: 18rem; height: 18rem; min-height: initial; margin: 0 auto; }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img::after { content: none; }
+
+@media (min-width: 23.125em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img { min-width: 20rem; min-height: 20rem; } }
+
+@media (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img { min-width: initial; } }
+
+@media (min-width: 68.75em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img { min-width: 20rem; min-height: 20rem; } }
+
+@media (min-width: 77.5em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img { min-width: 22rem; min-height: 22rem; } }
+
+@media (min-width: 31.25em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container { transform: initial; } }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p { font-size: 1.5rem; text-align: center; font-family: "source-han-serif-japanese", serif; font-weight: 700; }
+
+@media (min-width: 23.125em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p { font-size: 1.6rem; } }
+
+@media (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p { font-size: 1.3rem; } }
+
+@media (min-width: 68.75em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p { font-size: 1.5rem; } }
+
+@media (min-width: 77.5em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p { font-size: 1.7rem; } }
+
+@media (min-width: 84.375em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p { font-size: 1.8rem; } }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p:lang(en) { font-family: "haboro-contrast-condensed", sans-serif; font-size: 3rem; padding: 0; }
+
+@media (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p:lang(en) { font-size: 2.5rem; } }
+
+@media (min-width: 77.5em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p:lang(en) { font-size: 3rem; } }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p::before { content: none; }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p span { font-size: 2.2rem; font-family: "source-han-serif-japanese", serif; }
+
+@media (min-width: 23.125em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p span { font-size: 2.3rem; } }
+
+@media (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p span { font-size: 1.97rem; } }
+
+@media (min-width: 68.75em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p span { font-size: 2.2rem; } }
+
+@media (min-width: 77.5em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container p span { font-size: 2.5rem; } }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container div.line { height: 2rem; width: 2rem; position: relative; margin: 1rem auto; }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container div.line::before, .about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container div.line::after { content: ''; position: absolute; width: 100%; height: 3px; background-color: white; border-radius: 3px; top: 0.5rem; }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container div.line::before { transform: rotate(45deg); }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img .wp-block-cover__inner-container div.line::after { transform: rotate(-45deg); }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list { font-size: 1.25rem; min-height: 20rem; width: 100%; display: inline-flex; flex-flow: row wrap; align-content: space-between; justify-content: center; position: relative; }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list::after { content: ''; position: absolute; z-index: -1; display: block; mask-position: center center; -webkit-mask-position: center center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; width: 16rem; height: 19rem; transform: rotate(30deg); background-color: rgba(75, 44, 52, 0.3); mask-image: url(images/icons/about/leaf.svg); -webkit-mask-image: url(images/icons/about/leaf.svg); }
+
+@media (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list::after { transform: rotate(30deg) translate(20%, 20%); } }
+
+@media (min-width: 120em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list::after { transform: rotate(30deg) translate(30%, 30%); } }
+
+@media (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list { font-size: 1.4rem; } }
+
+@media (min-width: 68.75em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list { font-size: 1.5rem; } }
+
+@media (min-width: 100em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list { font-size: 1.9rem; } }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list ul { margin: 0; padding: 10% 3% 10% 10%; }
+
+@media (min-width: 64em) { .about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list ul { padding: 10% 3% 0% 10%; } }
+
+.about .entry-content .about-policy .policy-wrapper .wp-block-column .policy-list ul li { padding-bottom: 1rem; }
+
+.en-US.about .entry-content .about-sec h3 { font-size: 2.2rem; margin: 0; }
+
+@media (min-width: 64em) { .en-US.about .entry-content .about-sec h3 { font-size: 2.5rem; } }
+
+@media (min-width: 100em) { .en-US.about .entry-content .about-sec h3 { font-size: 3.25rem; } }
+
+@media (min-width: 31.25em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container { transform: initial; } }
+
+.en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p { font-family: "haboro-contrast-condensed", sans-serif; font-size: 3rem; padding: 0; }
+
+@media (min-width: 64em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p { font-size: 2.5rem; } }
+
+@media (min-width: 77.5em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p { font-size: 3rem; } }
+
+.en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:first-of-type { max-width: initial; }
+
+.en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) { font-size: 1.5rem; text-align: center; font-family: "source-han-serif-japanese", serif; font-weight: 700; }
+
+@media (min-width: 23.125em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) { font-size: 1.6rem; } }
+
+@media (min-width: 64em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) { font-size: 1.3rem; } }
+
+@media (min-width: 68.75em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) { font-size: 1.5rem; } }
+
+@media (min-width: 77.5em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) { font-size: 1.7rem; } }
+
+@media (min-width: 84.375em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) { font-size: 1.8rem; } }
+
+.en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) span { font-size: 2.2rem; font-family: "source-han-serif-japanese", serif; }
+
+@media (min-width: 23.125em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) span { font-size: 2.3rem; } }
+
+@media (min-width: 64em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) span { font-size: 1.95rem; } }
+
+@media (min-width: 68.75em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) span { font-size: 2.2rem; } }
+
+@media (min-width: 77.5em) { .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p:lang(jp) span { font-size: 2.5rem; } }
+
+.en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p::before { content: none; }
 
 /*# sourceMappingURL=../watanabestore/sass/maps/style.css.map */
