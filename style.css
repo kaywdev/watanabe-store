@@ -691,9 +691,9 @@ p.intro span { font-size: 2rem; }
 @media (min-width: 37.5em) { p.intro { max-width: 42.3rem; margin: 2rem auto; } }
 
 @media (min-width: 64em) { p.intro { font-size: 2rem; max-width: 52rem; margin: 4rem auto; }
-	p.intro span { font-size: 3rem; } }
+	p.intro span { font-size: 2.5rem; } }
 
-@media (min-width: 77.5em) { p.intro { max-width: 63rem; margin: 5rem auto; } }
+@media (min-width: 77.5em) { p.intro { max-width: 75rem; margin: 5rem auto; } }
 
 @media (min-width: 100em) { p.intro { font-size: 2.5rem; padding: 2.5rem 0; }
 	p.intro span { font-size: 4rem; } }
@@ -710,13 +710,21 @@ p.intro span { font-size: 2rem; }
 
 @media (min-width: 84.375em) { .delivery .entry-content p.intro { max-width: 68rem; font-size: 2rem; } }
 
-@media (min-width: 100em) { .delivery .entry-content p.intro { font-size: 2.3rem; } }
+@media (min-width: 120em) { .delivery .entry-content p.intro { font-size: 2.3rem; } }
 
-@media (min-width: 64em) { .homemade .entry-content p.intro, .about .entry-content p.intro { font-size: 1.5rem; } }
+@media (min-width: 64em) { .homemade .entry-content p.intro, .about .entry-content p.intro { font-size: 1.8rem; } }
 
-@media (min-width: 84.375em) { .homemade .entry-content p.intro, .about .entry-content p.intro { font-size: 2rem; } }
+@media (min-width: 75em) { .homemade .entry-content p.intro, .about .entry-content p.intro { max-width: 58rem; } }
 
-@media (min-width: 100em) { .homemade .entry-content p.intro, .about .entry-content p.intro { max-width: 60rem; font-size: 2.3rem; } }
+@media (min-width: 77.5em) { .homemade .entry-content p.intro, .about .entry-content p.intro { max-width: 67rem; } }
+
+@media (min-width: 100em) { .homemade .entry-content p.intro, .about .entry-content p.intro { font-size: 2rem; } }
+
+@media (min-width: 120em) { .homemade .entry-content p.intro, .about .entry-content p.intro { font-size: 2.3rem; max-width: 75rem; } }
+
+@media (min-width: 37.5em) { .homemade .entry-content p.intro br, .about .entry-content p.intro br { display: block; } }
+
+@media (min-width: 84.375em) { .homemade .entry-content p.intro br:nth-of-type(1), .about .entry-content p.intro br:nth-of-type(1) { display: none; } }
 
 body.en-US .site-main .entry-content p.intro { font-family: "haboro-contrast-condensed", sans-serif; padding: 0 10%; font-size: 1.375rem; }
 
