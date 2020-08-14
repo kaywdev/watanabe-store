@@ -46,6 +46,12 @@
                     grid-area: banner;
                     text-align: center;
                     font-size:1.12rem;
+                    @include mq($mq600){
+                        font-size:1.2rem;
+                    }
+                    @include mq($mq1024){
+                        font-size:1.3rem;
+                    }
                 }
                 .bogo-language-switcher{
                     display:flex;
@@ -129,6 +135,7 @@
 body.en-US{
     .site-header{
         .header-wrapper{
+            
             .header-top {
                 .header-top-inner-wrapper {
                     .top-banner{
@@ -136,23 +143,64 @@ body.en-US{
                         @include mq($mq370){
                             font-size:1rem;
                         }
+                        @include mq($mq600){
+                            font-size:1.15rem;
+                        }
+                        @include mq($mq1024){
+                            font-size:1.3rem;
+                        }
+
                     }
                 }
 
             }
-            
-            .site-branding{
-               h1{
-                   .logo-wrapper{
-                       img{
-                           height:2.5rem;
-                           @include mq($mq670){
-                            height:3.2rem; 
+            .header-bottom{
+                margin-top:0;
+                .header-bottom-wrapper{
+                    padding:0 5%;
+                    @include mq($mq1024){
+                        padding:0;
+                        max-width: 1180px;
+                        margin:0 auto;
+                    }
+                    .site-branding{
+                    h1.site-title{
+                        margin-top:0;
+                        .logo-wrapper{
+                            padding: 0;
+                            object-fit: cover;
+                            @include mq($mq500){
+                                padding: 0.5rem 0;  
+                            }
+                           @include mq($mq600){
+                             max-width:28.125rem;
                            }
-                       }
-                   }
-               } 
-            }   
+                            @include mq($mq1024){
+                                padding-left:8%;
+                                max-width:32rem;
+                            }
+                            @include mq($mq1200){
+                                max-width:34rem;
+                            }
+                            @include mq($mq1240){
+                                padding-left:5%; 
+                            }
+                            @include mq($mq1350){
+                                padding-left:0; 
+                            }
+                           
+
+                            img{
+                                height:3rem;
+                                @include mq($mq670){
+                                    height:3.2rem; 
+                                }
+                            }
+                        }
+                    } 
+                    }   
+                }
+            }
         }
        
     }

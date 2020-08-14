@@ -79,7 +79,12 @@
 					</div><!-- .site-branding -->
 				
 					<nav id="site-navigation" class="main-navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'watanabestore' ); ?></button>
+
+						<div class="menu-wrapper" id="hm-menu" aria-controls="primary-menu" aria-expanded="false">
+						<div class="menu">
+								<div class="icon"></div>
+						</div>
+						</div>
 						<?php
 						wp_nav_menu(
 							array(

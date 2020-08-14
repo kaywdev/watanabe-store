@@ -12,18 +12,13 @@
 		return;
 	}
 
-	const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
-
-	// Return early if the button don't exist.
-	if ( 'undefined' === typeof button ) {
-		return;
-	}
+	const hm = document.getElementById('hm-menu');
 
 	const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
 
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
+		hm.style.display = 'none';
 		return;
 	}
 
@@ -32,13 +27,13 @@
 	}
 
 	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
-	button.addEventListener( 'click', function() {
+	hm.addEventListener( 'click', function() {
 		siteNavigation.classList.toggle( 'toggled' );
 
-		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
-			button.setAttribute( 'aria-expanded', 'false' );
+		if ( hm.getAttribute( 'aria-expanded' ) === 'true' ) {
+			hm.setAttribute( 'aria-expanded', 'false' );
 		} else {
-			button.setAttribute( 'aria-expanded', 'true' );
+			hm.setAttribute( 'aria-expanded', 'true' );
 		}
 	} );
 
@@ -48,7 +43,7 @@
 
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );
-			button.setAttribute( 'aria-expanded', 'false' );
+			hm.setAttribute( 'aria-expanded', 'false' );
 		}
 	} );
 
