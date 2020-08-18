@@ -14,6 +14,14 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<?php if ( is_home() || is_front_page() ) : ?>
+  <?php $locale = get_locale(); if( 'en_US' == $locale ): ?>
+	
+    <meta name="description" content="Watanabe Store is a grocery shop in Narashino established in 1958. We get fresh vegetables, fish and meat from market every morning. Delivery service available."/>
+    <?php elseif($locale == 'ja'): ?>
+    <meta name="description" content="習志野駅前で創業６０年の老舗スーパー、ワタナベストアーです。毎朝市場から新鮮な野菜、魚、肉を仕入れて、お手頃価格で販売しています。配達サービスは電話または店頭にて受け付けています。"/>
+  <?php endif; ?>
+<?php endif; ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 

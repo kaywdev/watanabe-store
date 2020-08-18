@@ -230,3 +230,34 @@ add_filter( 'body_class', 'custom_class' );
 add_filter( 'post_class', 'custom_class' );
 
 
+/**
+ * change description tag by language
+ */
+
+add_theme_support( 'title-tag' );
+ 
+function my_description($description){
+  if(is_home()|| is_front_page() && !is_paged()){
+    $description = '';
+  }
+  return $description;
+}
+add_filter('aioseop_description', 'my_description');
+
+/**
+ * translate Site title by language
+ */
+add_filter( 'option_blogname', 'tr_option_blogname' );
+ 
+function tr_option_blogname( $blogname ) {
+    return __($blogname, 'watanabestore');
+}
+/**
+ * translate Site tagline by language
+ */
+
+add_filter( 'option_blogdescription', 'tr_option_blogdescription' );
+ 
+function tr_option_blogdescription( $blogdescription ) {
+    return __($blogdescription, 'watanabestore');
+}
