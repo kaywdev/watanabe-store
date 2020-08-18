@@ -57,22 +57,27 @@
                     padding: 0;
                     max-width: 1170px;
                 }
-
                 p{
                     font-family: $font__heading-jp;
-                    font-size: 2.4rem;
+                    font-size: 2.1rem;
                     line-height: 1;
                     padding-bottom: 5px;
                     border-bottom: 1px solid #ffffff;
                     margin-top:0;
                     margin-bottom: 1.5rem;
+                    @include mq($mq370){
+                        font-size: 2.4rem; 
+                    }
 
                     &:first-of-type,
                     &:last-of-type{
                         max-width:13rem;
                     }
-
                     &:nth-of-type(2){
+                        max-width:15.5rem;
+                    }
+
+                    &:nth-of-type(3){
                         max-width:16rem;
                     }
             
@@ -89,6 +94,10 @@
                         }
                     }
                     
+                }
+                // Hide special section link on banner
+                .banner-sp{
+                    display:none;
                 }
                 @include mq($mq1024){
                     p{
@@ -175,7 +184,7 @@
         .entry-content{
             .wp-block-cover{
                 .wp-block-cover__inner-container{
-                    p{
+                    p{          
                         &::before{
                             background-color: #ffffff;
                         }
@@ -221,6 +230,29 @@
             }
         }
     }
+    .delivery,
+    .about{
+        .entry-content{
+            .wp-block-cover{
+                .wp-block-cover__inner-container{
+                    p{
+                      font-size: 2.27rem;
+                        @include mq($mq370){
+                            font-size: 2.8rem;
+                        }
+                        &::before{
+                            top: 3rem;
+                            @include mq($mq370){
+                                top: 3.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+   
 }
 //EN version
 body.en-US{

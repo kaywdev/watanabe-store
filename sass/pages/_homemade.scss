@@ -27,7 +27,7 @@
                     &::after{
                         content:'';
                         position:absolute;
-                        z-index:0;
+                        z-index:-1;
                         display:block; 
                         mask-position: center center;
                         -webkit-mask-position: center center;
@@ -93,6 +93,7 @@
             }
         }
         .hm-pickles,
+        .hm-fish,
         .hm-veg{
             .hm-inner-wrapper{
                 max-width: 1200px;
@@ -122,6 +123,7 @@
         }
         .hm-pickles{
             background-color:$color__background-green;
+            margin-bottom: 4rem;
             .wp-block-group__inner-container{
                 .hm-text-wrapper{ 
                     &::after{
@@ -137,7 +139,7 @@
                         }
                         @include mq($mq600){
                             left:-18%;
-                            bottom:-55%;
+                            top: 8%;
                             width: 34rem;
                             height: 32rem;
                         }
@@ -160,7 +162,9 @@
                 }
             }
         }
-        .hm-veg{
+        .hm-fish{
+            background-color:$color__background-blue;
+            margin-bottom: 3rem;
             .hm-inner-wrapper{
                 .wp-block-group__inner-container{
                     @include mq($mq850){
@@ -168,22 +172,83 @@
                         "hm-title hm-title" 
                         "hm-img hm-text";
                     }  
-                    .hm-text-wrapper{      
+                    .hm-text-wrapper{ 
+                        z-index:2;     
                         &::after{
                             bottom: -13%;
                             right: -50%;
+                            width: 28.25rem;
+                            height: 30rem;
+                            transform: scaleX(-1);
+                            background-color: $color__background-blue-lighter;
+                            mask-image:url(images/icons/homemade/fish.svg);
+                            -webkit-mask-image:url(images/icons/homemade/fish.svg);
+                            @include mq($mq370){
+                                right: -33%;  
+                            }
+                            @media all and (orientation:landscape){
+                                bottom: -30%;
+                            }
+                            @include mq($mq600){
+                                height: 36rem;
+                                top: 0%;
+                                right: -24%
+                            }
+                            @media screen and (min-width:600px) and (orientation:landscape){
+                                top:0;
+                            }
+                            @include mq($mq850){
+                                left: 50%;
+                                top: 50%;
+                                width: 22rem;
+                                height: 25rem;
+                                transform: translate(-50%, -50%) scaleX(-1);
+                            }
+                            @include mq($mq1024){
+                                width: 25rem;
+                                height: 28rem;
+                            }
+                            @include mq($mq1600){
+                                width: 30rem;
+                                height: 32rem;
+                            }
+                            
+                        }
+                        .wp-block-group__inner-container{                
+                            p{
+                                &:last-of-type{
+                                    margin-bottom:0;
+                                }
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+        .hm-veg{
+            .hm-inner-wrapper{
+                .wp-block-group__inner-container{
+                    @include mq($mq850){
+                        grid-template-areas:
+                        "hm-title hm-title" 
+                        "hm-text hm-img";
+                    }  
+                    .hm-text-wrapper{      
+                        &::after{
+                            bottom: -13%;
+                            left: -50%;
                             width: 28.25rem;
                             height: 30rem;
                             background-color: $color__background-brown-lighter;
                             mask-image:url(images/icons/homemade/bamboo.svg);
                             -webkit-mask-image:url(images/icons/homemade/bamboo.svg);
                             @include mq($mq370){
-                                right: -33%;  
+                                left: -33%;  
                             }
                             @include mq($mq600){
                                 height: 36rem;
                                 bottom: -50%;
-                                right: -24%
+                                left: -24%
                             }
                             @include mq($mq850){
                                 left: 50%;
