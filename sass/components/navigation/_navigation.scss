@@ -310,9 +310,16 @@ body.en-US{
 								@include mq($mq1024){
 									display:flex;
 									bottom:1.2rem;
+									
+								}
+								@include mq($mq1200){
+									padding-right:7%;
 								}
 								@include mq($mq1240){
 									padding-right:6%;
+								}
+								@include mq($mq1300){
+									padding-right:2.5%;
 								}
 								@include mq($mq1350){
 									padding-right:0;
@@ -332,10 +339,10 @@ body.en-US{
 										font-size:1.2rem;
 										font-weight: 600;
 										@include mq($mq1024){
-											font-size:1.3rem;
+											font-size:1.15rem;
 										}
 										@include mq($mq1200){
-											font-size:1.35rem;
+											font-size:1.3rem;
 										}
 										@include mq($mq1600){
 											font-size:1.4rem;

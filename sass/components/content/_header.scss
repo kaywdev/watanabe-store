@@ -160,7 +160,7 @@ body.en-US{
                     padding:0 5%;
                     @include mq($mq1024){
                         padding:0;
-                        max-width: 1180px;
+                        max-width: 1170px;
                         margin:0 auto;
                     }
                     .site-branding{
@@ -180,10 +180,11 @@ body.en-US{
                                 max-width:32rem;
                             }
                             @include mq($mq1200){
+                                padding-left:6%;
                                 max-width:34rem;
                             }
                             @include mq($mq1240){
-                                padding-left:5%; 
+                                padding-left:3%; 
                             }
                             @include mq($mq1350){
                                 padding-left:0; 

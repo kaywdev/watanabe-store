@@ -63,15 +63,39 @@
                         -webkit-mask-image:url(images/icons/front/shop.svg);
                     }
                 }
-             
+                .fp-main{
+                    margin-bottom:-0.4rem;
+                    img{
+                        @include mq($mq850){
+                            width:100%;
+                            max-height: 26rem;
+                        }
+                        @include mq($mq900){
+                            max-height: 30rem;
+                        }
+                        @include mq($mq1024){
+                            max-height: 33rem;
+                        }
+                        @include mq($mq1240){
+                            max-height: 35rem;
+                        }
+                        @include mq($mq1300){
+                            max-height: 40rem;
+                        }
+                        @include mq($mq1600){
+                            max-height: 45rem;
+                        }
+
+                    }
+                }
                 
                 .deli-loc{
                     padding: 0 5%;
-                    max-width: 1350px;
+                    max-width: 1200px;
                     margin: 0 auto;
 
-                    @include mq($mq1920){
-                        padding: 0 2%;
+                    @include mq($mq1300){
+                        padding: 0;
                     }
                     h4, p{
                         @include mq($mq1024){
@@ -133,13 +157,6 @@
                                     margin: 0;
                                     justify-self:start;
                                     text-align: left;
-                                }
-                                p.deli-apt{    
-                                    @include mq($mq1200){
-                                        br{
-                                            display:none;
-                                         }  
-                                    }
                                 }
 
                                 p.deli-hr-text{
@@ -270,6 +287,9 @@
                             }
                             @include mq($mq1000){
                                 max-height: initial;
+                            }
+                            @include mq($mq1920){
+                                margin-top:1.7rem;
                             }
                         }
                     }

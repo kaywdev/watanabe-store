@@ -1,0 +1,119 @@
+.entry-content{
+    .featured{
+        background-color: $color__background-green-lighter;
+        padding: 1.5rem 0 2rem;
+        @include mq($mq600){
+            padding:1.5rem 5% 2rem;
+        }
+        .wp-block-group__inner-container{
+            max-width: 1200px;
+            margin: 0 auto;
+            .featured-text{
+                padding: 0 5%;
+                @include mq($mq600){
+                    padding:0;
+                }
+                p{
+                    font-size: 1.25rem;
+                    text-align: center;
+                    margin-bottom:0;
+                    @include mq($mq1024){
+                        font-size:1.4rem;
+                    }
+                    @include mq($mq1920){
+                        font-size:1.75rem
+                    }
+                    &:first-of-type{
+                        margin-top:0;
+                    }
+                }
+                .notice{
+                    font-size: 0.75rem;
+                    text-align: center;
+                    margin-top:0.3rem;
+                    @include mq($mq370){
+                        font-size: 0.85rem; 
+                    }
+                    @include mq($mq600){
+                        font-size: 1rem; 
+                    }
+                    @include mq($mq850){
+                        font-size: 1.2rem; 
+                    }
+                    @include mq($mq1024){
+                        font-size:1.3rem;
+                    }
+                    @include mq($mq1920){
+                        font-size:1.65rem
+                    }
+                    
+                }
+            }
+            .featured-product{
+                margin-top:1rem;
+                .wp-block-column{
+                    .wp-block-image{
+                        &:nth-of-type(2){
+                            margin-bottom:0;
+                        }
+                            figure{
+                                margin-bottom:0;
+                            figcaption{
+                                text-align: center;
+                                @include mq($mq850){
+                                    font-size: 1.25rem; 
+                                }
+                                @include mq($mq1024){
+                                    font-size:1.4rem;
+                                }
+                                @include mq($mq1920){
+                                    font-size:1.75rem
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//EN Version
+body.en-US{
+    .entry-content{
+        .featured{
+            .wp-block-group__inner-container{
+              .feature-text{
+                .notice{
+                    font-size: 1rem;
+                }  
+              }
+              .featured-product{
+                .wp-block-column{
+                    .wp-block-image{
+                        margin-bottom: 2em;
+                        &:nth-of-type(2){
+                            margin-bottom: 1em; 
+                        }
+                            
+                            figcaption{
+                                font-size:1.1rem;
+                                text-align: center;
+                                @include mq($mq370){
+                                    font-size:1.2rem;  
+                                }
+                                @include mq($mq1024){
+                                    font-size:1.4rem;
+                                }
+                                @include mq($mq1920){
+                                    font-size:1.75rem
+                                }
+                            }
+                    
+                    }
+                }
+              }
+            }
+        }
+    }
+}

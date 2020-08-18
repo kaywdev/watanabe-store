@@ -159,7 +159,7 @@
                     }
                     
                      
-                    .about-policy-img{
+                    >.about-policy-img{  
                         width:18rem;
                         height: 18rem;
                         min-height: initial;
@@ -184,21 +184,43 @@
                             min-height:22rem; 
                         }
                 
-                        .wp-block-cover__inner-container{
+                        >.wp-block-cover__inner-container{
+                            padding:0;
                             @include mq($mq500){
                                 transform:initial;
                             }
+                            &::after{
+                                content:"";
+                                width: 16rem;
+                                height: 16rem;
+                                border: 1px solid #ffffff;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                @include mq($mq1100){
+                                    width: 17rem;
+                                    height: 17rem;
+                                }
+                                
+                            }
 
-                            p{
-                                font-size:1.5rem; 
+                            >p{
+                                font-size: 1.25rem;
                                 text-align: center;
                                 font-family: $font__heading-jp;
                                 font-weight: 700;
+                                border-bottom:none;
+                                line-height: 1.2;
+                                margin-bottom:0; 
                                 @include mq($mq370){
-                                    font-size:1.6rem;    
+                                    font-size:1.5rem;    
+                                }
+                                @include mq($mq800){
+                                    font-size:1.4rem;    
                                 }
                                 @include mq($mq1024){
-                                    font-size:1.3rem;
+                                    font-size:1.29rem;
                                 }
                                 @include mq($mq1100){
                                     font-size:1.5rem;
@@ -206,16 +228,16 @@
                                 @include mq($mq1240){
                                     font-size:1.7rem;
                                 }
-                                @include mq($mq1350){
-                                    font-size:1.8rem;
-                                }
 
                                 &:lang(en){
                                     font-family: $font__heading-en;
-                                    font-size:3rem; 
+                                    font-size:2.6rem; 
                                     padding:0;
+                                    @include mq($mq370){
+                                        font-size:3rem;  
+                                    }
                                     @include mq($mq1024){
-                                        font-size:2.5rem;
+                                        font-size:2.3rem;
                                     }
                                     @include mq($mq1240){
                                         font-size:3rem;
@@ -225,13 +247,16 @@
                                     content:none;
                                 }
                                 span{
-                                    font-size:2.2rem;
-                                    font-family: $font__heading-jp;  
+                                    font-size:1.9rem;
+                                    font-family: $font__heading-jp; 
                                     @include mq($mq370){
-                                        font-size:2.3rem;    
+                                        font-size:2.2rem;    
+                                    }
+                                    @include mq($mq800){
+                                        font-size:2.1rem;    
                                     }
                                     @include mq($mq1024){
-                                        font-size:1.97rem;    
+                                        font-size:1.93rem;    
                                     }
                                     @include mq($mq1100){
                                         font-size:2.2rem;    
@@ -349,68 +374,10 @@
         .about-policy{
             .policy-wrapper{
                 .wp-block-column{
-                    .about-policy-img{
-                        
+                    .about-policy-img{        
                         >div.wp-block-cover__inner-container{
-                            @include mq($mq500){
-                                transform:initial;
-                            }
-
                             p{
-                                font-family: $font__heading-en;
-                                font-size:3rem; 
-                                    padding:0;
-                                    @include mq($mq1024){
-                                        font-size:2.5rem;
-                                    }
-                                    @include mq($mq1240){
-                                        font-size:3rem;
-                                    }
-                                &:first-of-type{
-                                    max-width: initial;
-                                }
-                                &:lang(jp){
-                                    font-size:1.5rem; 
-                                text-align: center;
-                                font-family: $font__heading-jp;
-                                font-weight: 700;
-                                @include mq($mq370){
-                                    font-size:1.6rem;    
-                                }
-                                @include mq($mq1024){
-                                    font-size:1.3rem;
-                                }
-                                @include mq($mq1100){
-                                    font-size:1.5rem;
-                                }
-                                @include mq($mq1240){
-                                    font-size:1.7rem;
-                                }
-                                @include mq($mq1350){
-                                    font-size:1.8rem;
-                                }
-                                span{
-                                    font-size:2.2rem;
-                                    font-family: $font__heading-jp;  
-                                    @include mq($mq370){
-                                        font-size:2.3rem;    
-                                    }
-                                    @include mq($mq1024){
-                                        font-size:1.95rem;    
-                                    }
-                                    @include mq($mq1100){
-                                        font-size:2.2rem;    
-                                    }
-                                    @include mq($mq1240){
-                                        font-size:2.5rem;    
-                                    }
-                                }
-
-                                }
-                                &::before{
-                                    content:none;
-                                }
-                               
+                                max-width: none;                                                           
                             }
                         }
                     }
