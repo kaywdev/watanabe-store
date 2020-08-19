@@ -147,6 +147,13 @@ function watanabestore_scripts() {
 	wp_style_add_data( 'watanabestore-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'watanabestore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script(
+        'watanabestore-scrollTop',
+        get_template_directory_uri().'/js/scroll-top.js',
+        array('jquery'),
+        '20200818',
+        true
+    );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

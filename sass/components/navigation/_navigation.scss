@@ -97,8 +97,11 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			transition-duration: 0.5s;
-			margin-top: 3px;
+			margin-top: 0.2rem;
 			z-index: 5;
+			@include mq($mq600){
+				margin-top: 0.5rem;
+			}
 			.icon{
 				transition-duration: 0.5s;
 				position:absolute;
@@ -157,7 +160,10 @@ button.menu-toggle {
 				font-family:$font__sptag-jp;
 				color:#ffffff;
 				@include mq($mq800){
-					font-size: 0.95rem;
+					font-size: 0.85rem;
+				}
+				@include mq($mq900){
+					font-size: 1rem;
 				}
 				@include mq($mq1024){
 					font-size: 1.1rem;
@@ -170,12 +176,12 @@ button.menu-toggle {
 			
 		@include mq($mq800){
 			position: absolute;
-			bottom: 1rem;
+			top: 40%;
 			right: 0;
 			padding-right: 5%;
 		}
 		@include mq($mq1024){
-			bottom: 1.4rem;
+			top: 35%;
 			padding-right: 8%;
 		}
 		
@@ -190,10 +196,9 @@ button.menu-toggle {
 	.menu-wrapper{
 		position: fixed;
 		z-index: 9;
-		top: 1rem;
+		top: 1.5rem;
 		right: 5%;
 		@media all and (orientation:landscape){
-			top: 0.5rem;
 			right: 2%;	
 		}
 		.menu{
@@ -301,6 +306,11 @@ body.en-US{
 							@include mq($mq1024){
 								display:none;
 							}
+							.menu{
+								@include mq($mq800){
+									margin-top:0.2rem;
+								}
+							}
 						}
 						.menu-menu-1-container{
 							ul.nav-menu{
@@ -309,7 +319,7 @@ body.en-US{
 								}
 								@include mq($mq1024){
 									display:flex;
-									bottom:1.2rem;
+									top:30%;
 									
 								}
 								@include mq($mq1200){
@@ -323,6 +333,9 @@ body.en-US{
 								}
 								@include mq($mq1350){
 									padding-right:0;
+								}
+								@include mq($mq1600){
+									top:25%;
 								}
 	
 
@@ -355,7 +368,7 @@ body.en-US{
 					nav.main-navigation.toggled{
 						.menu-wrapper{
 							@media all and (orientation:landscape){
-								top: 0.5rem;
+								top: 1.5rem;
 								right: 2%;	
 							}
 						}

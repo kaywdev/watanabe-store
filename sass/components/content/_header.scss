@@ -98,7 +98,7 @@
                                     padding: 0.5rem 5%;
                                     height: auto;
                                     width:100%;
-                                    display: flex;
+                                    display: inline-flex;
                                     align-items: center;
                                     justify-content: center;
 
@@ -108,6 +108,10 @@
                                     @include mq($mq600){
                                         width:65%;
                                     }
+                                    @include mq($mq800){
+                                        width:52%;
+                                    }
+
                                     @include mq($mq1024){
                                         padding: 0.7rem 8%;
                                     }

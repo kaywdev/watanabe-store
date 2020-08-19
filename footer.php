@@ -10,6 +10,9 @@
  */
 
 ?>
+	<a href="#" class="scrollToTop">
+	<?php get_template_part('images/icons/footer/gototop')?>
+	</a>
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info" lang="en">
