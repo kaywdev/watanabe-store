@@ -1761,4 +1761,18 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 .en-US.about .entry-content .about-policy .policy-wrapper .wp-block-column .about-policy-img > div.wp-block-cover__inner-container p { max-width: none; }
 
+.error404 .site-main .error-404 { padding-bottom: 2rem; }
+
+.error404 .site-main .error-404 .page-header .page-title { font-family: "lato", sans-serif; text-align: center; padding: 0 2%; }
+
+.error404 .site-main .error-404 .page-header .page-title .close-icon { max-width: 20rem; margin: 0 auto; padding: 2rem 0; }
+
+.error404 .site-main .error-404 .page-header .page-title span { display: block; width: 100%; text-align: center; font-size: 8rem; line-height: 1; }
+
+.error404 .site-main .error-404 .page-content { text-align: center; }
+
+.error404 .site-main .error-404 .page-content a { text-decoration: none; }
+
+.error404 .site-main .error-404 .page-content a .back-cta { color: #ffffff; padding: 1rem 2rem; background-color: #126C42; max-width: 200px; margin: 0 auto; }
+
 /*# sourceMappingURL=../watanabestore/sass/maps/style.css.map */

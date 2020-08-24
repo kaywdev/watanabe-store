@@ -1,0 +1,39 @@
+.error404{
+    .site-main{
+        .error-404{
+            padding-bottom: 2rem;
+            .page-header{
+                .page-title{
+                    font-family: $font__main-en;
+                    text-align: center;
+                    padding: 0 2%;
+                    .close-icon{
+                        max-width:20rem;
+                        margin: 0 auto;
+                        padding: 2rem 0;
+                    }
+                    span{
+                        display: block;
+                        width:100%;
+                        text-align: center;
+                        font-size: 8rem;
+                        line-height: 1;
+                    }
+                }
+            }
+            .page-content{
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    .back-cta{
+                        color: #ffffff;
+                        padding: 1rem 2rem;
+                        background-color:$color__green;
+                        max-width:200px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
