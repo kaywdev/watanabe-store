@@ -52,7 +52,7 @@
                                      "product-count price";
                                     align-items: center;
                                      @include mq($mq600){
-                                         grid-template-columns: 22% 1fr;//changed template design in Sep 19
+                                         grid-template-columns: 20% 1fr;//changed template design in Sep 19
                                      }
                                      @include mq($mq670){
                                          //grid-template-columns: 30% 1fr; //changed template design in Sep 19
@@ -259,12 +259,14 @@ body.en-US{
                                         }
                                     }
                                     p.product{
-                                        font-size: 2.25rem;
+                                        //font-size: 2.25rem;
+                                        font-size: 2.1rem;
                                         @include mq($mq500){
                                             font-size:2.8rem;
                                         }
                                         @include mq($mq600){
-                                            font-size:1.5rem;
+                                            //font-size:1.5rem;
+                                            font-size: 2.1rem;
                                         }
                                         @include mq($mq670){
                                             font-size:1.8rem;
@@ -273,13 +275,14 @@ body.en-US{
                                             font-size:2rem;
                                         }
                                         @include mq($mq850){
-                                            font-size:2.3rem;
+                                            //font-size:2.3rem;
                                         }
-                                        @include mq($mq1024){
-                                            font-size:2.8rem;
+                                        @include mq($mq1240){
+                                             font-size:2.5rem;
                                         }
-                                        @include mq($mq1200){
-                                            font-size:3.3rem;
+                                        @include mq($mq1600){
+                                            //font-size:3.3rem;
+                                            font-size:2.9rem;
                                         }
                                     }
                                     p.product-count{

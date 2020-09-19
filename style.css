@@ -863,7 +863,7 @@ body.en-US .site-main .entry-content p.intro span { font-size: 1.9rem; }
 
 .entry-content .special .wp-block-group__inner-container .special-wrapper .wp-block-group__inner-container .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container { font-family: "OtsutomeFont", sans-serif; position: relative; padding: 2rem 2rem 1rem; width: 100%; display: inline-grid; grid-template-areas: "title title" "produce produce" "comment product" "product-count price"; align-items: center; }
 
-@media (min-width: 37.5em) { .entry-content .special .wp-block-group__inner-container .special-wrapper .wp-block-group__inner-container .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container { grid-template-columns: 22% 1fr; } }
+@media (min-width: 37.5em) { .entry-content .special .wp-block-group__inner-container .special-wrapper .wp-block-group__inner-container .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container { grid-template-columns: 20% 1fr; } }
 
 .entry-content .special .wp-block-group__inner-container .special-wrapper .wp-block-group__inner-container .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; height: 87%; border: 5px solid rgba(209, 3, 3, 0.7); }
 
@@ -959,21 +959,19 @@ body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-gr
 
 @media (min-width: 75em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.produce { font-size: 2rem; } }
 
-body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 2.25rem; }
+body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 2.1rem; }
 
 @media (min-width: 31.25em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 2.8rem; } }
 
-@media (min-width: 37.5em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 1.5rem; } }
+@media (min-width: 37.5em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 2.1rem; } }
 
 @media (min-width: 41.875em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 1.8rem; } }
 
 @media (min-width: 48em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 2rem; } }
 
-@media (min-width: 53.125em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 2.3rem; } }
+@media (min-width: 77.5em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 2.5rem; } }
 
-@media (min-width: 64em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 2.8rem; } }
-
-@media (min-width: 75em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 3.3rem; } }
+@media (min-width: 100em) { body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product { font-size: 2.9rem; } }
 
 body.en-US .entry-content .special .wp-block-group__inner-container .wp-block-group.special-wrapper .wp-block-columns .sp-tag .wp-block-group .wp-block-group__inner-container p.product-count { font-size: 1.65rem; }
 
