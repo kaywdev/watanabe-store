@@ -42,16 +42,20 @@
                                     display: inline-grid;
                                     //changed template design in Sep 10
                                     grid-template-areas: 
-                                    "title title"
-                                    "produce produce"
-                                    "product product"
-                                    "product-count price";
+                                    // "title title"
+                                    // "produce produce"
+                                    // "product product"
+                                    // "product-count price";
+                                     "title title"
+                                     "produce produce"
+                                     "comment product"
+                                     "product-count price";
                                     align-items: center;
                                      @include mq($mq600){
-                                         grid-template-columns: 30% 1fr;
+                                         grid-template-columns: 22% 1fr;//changed template design in Sep 19
                                      }
                                      @include mq($mq670){
-                                        grid-template-columns: 35% 1fr;
+                                         //grid-template-columns: 30% 1fr; //changed template design in Sep 19
                                      }
 
                                 
@@ -189,7 +193,8 @@
                                         }
                                     }
                                     .comment{
-                                        display: none; //Added in Sep 10
+                                        //display: none; //Added in Sep 10
+                                        display:block;
                                         grid-area:comment;
                                         color:$color__spt-red;
                                         font-size: 1.5rem;
