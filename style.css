@@ -1203,6 +1203,12 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 @media (min-width: 120em) { .home .site .site-main .entry-content .deli-loc h4, .home .site .site-main .entry-content .deli-loc p { font-size: 1.75rem; } }
 
+@media (min-width: 37.5em) { .home .site .site-main .entry-content .deli-loc .wp-block-column .shop-info-wrapper { min-height: 23rem; } }
+
+@media (min-width: 50em) { .home .site .site-main .entry-content .deli-loc .wp-block-column .shop-info-wrapper { min-height: 20rem; } }
+
+@media (min-width: 120em) { .home .site .site-main .entry-content .deli-loc .wp-block-column .shop-info-wrapper { min-height: 26rem; } }
+
 .home .site .site-main .entry-content .deli-loc .fp-delivery { padding: 2rem 0; position: relative; }
 
 .home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper { padding-bottom: 2rem; text-align: center; }
@@ -1249,9 +1255,11 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 .home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper .wp-block-buttons .wp-block-button .wp-block-button__link:hover, .home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper .wp-block-buttons .wp-block-button .wp-block-button__link:focus, .home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper .wp-block-buttons .wp-block-button .wp-block-button__link:active { color: #F0F3F5; background-color: #126C42; border: none; }
 
-.home .site .site-main .entry-content .deli-loc .fp-delivery .wp-block-image { padding: 0.5rem 0; }
+.home .site .site-main .entry-content .deli-loc .fp-delivery .wp-block-image { padding: 0; }
 
 @media (min-width: 75em) { .home .site .site-main .entry-content .deli-loc .fp-delivery .wp-block-image { max-height: 25rem; } }
+
+.home .site .site-main .entry-content .deli-loc .fp-delivery .wp-block-image > img { height: 100%; }
 
 .home .site .site-main .entry-content .deli-loc .fp-delivery hr.wp-block-separator { transform: translateY(2.5rem); width: 80%; }
 
@@ -1279,15 +1287,35 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 .home .site .site-main .entry-content .deli-loc .fp-location .location-text-wrapper .wp-block-group__inner-container .loc-list-wrapper .wp-block-group__inner-container p { margin: 0; }
 
-@media (min-width: 37.5em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 15.625rem; } }
+@media (min-width: 37.5em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { margin-top: 1rem; max-height: 10.6rem; } }
 
-@media (min-width: 53.125em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 30vh; } }
+@media (min-width: 38.4375em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 11.5rem; } }
 
-@media (min-width: 56.25em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 36vh; } }
+@media (min-width: 41.875em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 12.3rem; } }
 
-@media (min-width: 62.5em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: initial; } }
+@media (min-width: 44.375em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 13rem; } }
 
-@media (min-width: 120em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { margin-top: 1.7rem; } }
+@media (min-width: 48em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 14rem; } }
+
+@media (min-width: 50em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 15rem; } }
+
+@media (min-width: 53.125em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 15.8rem; } }
+
+@media (min-width: 56.25em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 16.5rem; } }
+
+@media (min-width: 57.5em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 17.3rem; } }
+
+@media (min-width: 62.5em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 18.5rem; } }
+
+@media (min-width: 64em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 19.6rem; } }
+
+@media (min-width: 68.75em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 20.2rem; } }
+
+@media (min-width: 70.625em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 20.8rem; } }
+
+@media (min-width: 75em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 21.6rem; } }
+
+@media (min-width: 81.25em) { .home .site .site-main .entry-content .deli-loc .fp-location iframe { max-height: 24.3rem; } }
 
 .page-id-23 .site .site-main #post-23 .special .wp-block-group__inner-container > h3, .page-id-23 .site .site-main #post-23 .wp-block-column > h3 { font-size: 1.75rem; }
 
@@ -1304,6 +1332,16 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 .page-id-23 .site .site-main #post-23 .deli-loc h4 { margin: 0; }
 
 .page-id-23 .site .site-main #post-23 .deli-loc p { margin-top: 0.5rem; }
+
+@media (min-width: 37.5em) { .page-id-23 .site .site-main #post-23 .deli-loc .wp-block-column .shop-info-wrapper { min-height: 31rem; } }
+
+@media (min-width: 41.875em) { .page-id-23 .site .site-main #post-23 .deli-loc .wp-block-column .shop-info-wrapper { min-height: 28rem; } }
+
+@media (min-width: 64em) { .page-id-23 .site .site-main #post-23 .deli-loc .wp-block-column .shop-info-wrapper { min-height: 25rem; } }
+
+@media (min-width: 100em) { .page-id-23 .site .site-main #post-23 .deli-loc .wp-block-column .shop-info-wrapper { min-height: 28rem; } }
+
+@media (min-width: 120em) { .page-id-23 .site .site-main #post-23 .deli-loc .wp-block-column .shop-info-wrapper { min-height: 35rem; } }
 
 @media (min-width: 64em) { .page-id-23 .site .site-main #post-23 .deli-loc .fp-delivery .deli-text-wrapper .apt-text br { display: none; } }
 

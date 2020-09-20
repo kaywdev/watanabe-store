@@ -105,6 +105,19 @@
                             font-size:1.75rem
                         }
                     }
+                    .wp-block-column{
+                        .shop-info-wrapper{
+                            @include mq($mq600){
+                                min-height: 23rem;
+                            }
+                            @include mq($mq800){
+                                min-height: 20rem;
+                            }
+                            @include mq($mq1920){
+                                min-height: 26rem;
+                            }
+                        }
+                    }
                     .fp-delivery{
                         padding: 2rem 0;
                         position: relative;
@@ -212,10 +225,14 @@
                            
                         }
                         .wp-block-image{
-                            padding: 0.5rem 0;
+                            padding:0; 
                             @include mq($mq1200){
                                 max-height: 25rem;   
                             }
+                            >img{
+                                height: 100%;
+                            }
+
                          }  
 
                         hr.wp-block-separator {
@@ -277,19 +294,60 @@
                         }
                         iframe{
                             @include mq($mq600){
-                                max-height: 15.625rem;
+                                margin-top: 1rem;
+                                max-height: 10.6rem;
+                            }
+                            @include mq($mq615){
+                                max-height: 11.5rem;
+                            }
+
+                            @include mq($mq670){
+                                max-height: 12.3rem;
+                            }
+                            @include mq($mq710){
+                                max-height: 13rem;
+                            }
+                            @include mq($mq768){
+                                max-height: 14rem;
+                            }
+                            @include mq($mq800){
+                                max-height: 15rem;
                             }
                             @include mq($mq850){
-                                max-height: 30vh;
+                                max-height: 15.8rem;
                             }
+
                             @include mq($mq900){
-                                max-height: 36vh;
+                                max-height: 16.5rem;
                             }
+
+                            @include mq($mq920){
+                                max-height: 17.3rem;
+                            }
+
                             @include mq($mq1000){
-                                max-height: initial;
+                                max-height: 18.5rem;
                             }
+                            @include mq($mq1024){
+                                max-height: 19.6rem;
+                            }
+                            @include mq($mq1100){
+                                max-height: 20.2rem;
+                            }
+                            @include mq($mq1130){
+                                max-height: 20.8rem;
+                            }
+                           
+                            @include mq($mq1200){
+                                max-height: 21.6rem;
+                            }
+
+                            @include mq($mq1300){
+                                max-height: 24.3rem;
+                            }
+
                             @include mq($mq1920){
-                                margin-top:1.7rem;
+                                
                             }
                         }
                     }

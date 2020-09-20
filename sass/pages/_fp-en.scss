@@ -30,6 +30,28 @@
                 p{
                     margin-top:0.5rem;
                 }
+                .wp-block-column{
+                    .shop-info-wrapper{
+                        @include mq($mq600){
+                            min-height: 31rem;
+                        }
+                        @include mq($mq670){
+                            min-height: 28rem;
+                        }
+
+                        @include mq($mq1024){
+                            min-height: 25rem;
+                        }
+
+                        @include mq($mq1600){
+                            min-height: 28rem;
+                        }
+
+                        @include mq($mq1920){
+                            min-height: 35rem;
+                        }
+                    }
+                }
                 .fp-delivery{
                     .deli-text-wrapper{
                         .apt-text{
