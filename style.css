@@ -486,7 +486,7 @@ body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper { 
 
 body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .site-branding h1.site-title { margin-top: 0; }
 
-body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .site-branding h1.site-title .logo-wrapper { padding: 0; -o-object-fit: cover; object-fit: cover; }
+body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .site-branding h1.site-title .logo-wrapper { padding: 0; margin-top: 0.8rem; -o-object-fit: cover; object-fit: cover; }
 
 @media (min-width: 31.25em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .site-branding h1.site-title .logo-wrapper { padding: 0.5rem 0; } }
 
