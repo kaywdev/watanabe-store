@@ -19,7 +19,7 @@
 	
     <meta name="description" content="Watanabe Store is a grocery shop in Narashino established in 1958. We get fresh vegetables, fish and meat from market every morning. Delivery service available."/>
     <?php elseif($locale == 'ja'): ?>
-    <meta name="description" content="習志野駅前で創業６０年の老舗スーパー、ワタナベストアーです。毎朝市場から新鮮な野菜、魚、肉を仕入れて、お手頃価格で販売しています。配達サービスは電話または店頭にて受け付けています。"/>
+    <meta name="description" content="ワタナベストアーは、習志野駅前で創業60年以上の老舗スーパーです。毎朝市場から新鮮な野菜、魚、肉を仕入れて、お手頃価格で販売しています。地域一番の鮮度の品物をぜひご家庭でお楽しみください。配達サービスは電話または店頭にて受け付けています。"/>
   <?php endif; ?>
 <?php endif; ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
