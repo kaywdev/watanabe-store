@@ -295,8 +295,6 @@ textarea { width: 100%; }
 
 .main-navigation .menu-wrapper .menu { padding: 5px; position: absolute; width: 40px; height: 40px; top: 50%; left: 50%; transform: translate(-50%, -50%); transition-duration: 0.5s; margin-top: 0.2rem; z-index: 5; }
 
-@media (min-width: 37.5em) { .main-navigation .menu-wrapper .menu { margin-top: 0.5rem; } }
-
 .main-navigation .menu-wrapper .menu .icon { transition-duration: 0.5s; position: absolute; width: 30px; height: 3px; border-radius: 20px; top: 15px; background-color: #E8E8E8; z-index: 3; }
 
 .main-navigation .menu-wrapper .menu .icon:before { transition-duration: 0.5s; position: absolute; border-radius: 20px; width: 30px; height: 3px; background-color: #E8E8E8; content: ""; top: -10px; }
@@ -358,13 +356,9 @@ button.menu-toggle { position: absolute; top: 0; right: 0; z-index: 4; margin-to
 
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next { text-align: end; flex: 1 0 50%; }
 
-@media (min-width: 37.5em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-wrapper { top: 5.8rem; } }
-
-@media (min-width: 50em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-wrapper { display: block; top: 1rem; } }
+@media (min-width: 50em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-wrapper { display: block; top: 0.5rem; } }
 
 @media (min-width: 64em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-wrapper { display: none; } }
-
-@media (min-width: 50em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-wrapper .menu { margin-top: 0.2rem; } }
 
 @media (min-width: 50em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-menu-1-container ul.nav-menu { display: none; } }
 
@@ -490,7 +484,7 @@ body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .s
 
 @media (min-width: 31.25em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .site-branding h1.site-title .logo-wrapper { padding: 0.5rem 0; } }
 
-@media (min-width: 37.5em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .site-branding h1.site-title .logo-wrapper { max-width: 28.125rem; } }
+@media (min-width: 37.5em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .site-branding h1.site-title .logo-wrapper { max-width: 28.125rem; margin-top: 0; } }
 
 @media (min-width: 64em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .site-branding h1.site-title .logo-wrapper { padding-left: 8%; max-width: 32rem; } }
 
@@ -847,7 +841,7 @@ body.en-US .site-main .entry-content p.intro span { font-size: 1.9rem; }
 
 @media (min-width: 120em) { body.en-US .en-US.homemade .entry-content p.intro, body.en-US .en-US.about .entry-content p.intro { min-width: 90rem; } }
 
-.entry-content .special { padding: 1.5rem 0 2rem; }
+.entry-content .special { display: none; padding: 1.5rem 0 2rem; }
 
 @media (min-width: 26.25em) { .entry-content .special .wp-block-group__inner-container { padding: 0 5%; } }
 

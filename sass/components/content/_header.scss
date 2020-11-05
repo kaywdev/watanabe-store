@@ -179,6 +179,7 @@ body.en-US{
                             }
                            @include mq($mq600){
                              max-width:28.125rem;
+                             margin-top:0;
                            }
                             @include mq($mq1024){
                                 padding-left:8%;

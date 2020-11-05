@@ -99,9 +99,7 @@
 			transition-duration: 0.5s;
 			margin-top: 0.2rem;
 			z-index: 5;
-			@include mq($mq600){
-				margin-top: 0.5rem;
-			}
+	
 			.icon{
 				transition-duration: 0.5s;
 				position:absolute;
@@ -296,19 +294,18 @@ body.en-US{
 				.header-bottom-wrapper{
 					.main-navigation{
 						.menu-wrapper{
-							@include mq($mq600){
-								top:5.8rem;
-							}
+	
 							@include mq($mq800){
 								display:block;
-								top:1rem;
+								top:0.5rem;
 							}
 							@include mq($mq1024){
 								display:none;
 							}
 							.menu{
+
 								@include mq($mq800){
-									margin-top:0.2rem;
+									//margin-top:0.75rem;
 								}
 							}
 						}
