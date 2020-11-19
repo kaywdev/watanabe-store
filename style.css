@@ -356,7 +356,9 @@ button.menu-toggle { position: absolute; top: 0; right: 0; z-index: 4; margin-to
 
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next { text-align: end; flex: 1 0 50%; }
 
-@media (min-width: 50em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-wrapper { display: block; top: 0.5rem; } }
+@media (min-width: 37.5em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-wrapper { top: 5.8rem; } }
+
+@media (min-width: 50em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-wrapper { display: block; top: 1rem; } }
 
 @media (min-width: 64em) { body.en-US .site-header .header-wrapper .header-bottom .header-bottom-wrapper .main-navigation .menu-wrapper { display: none; } }
 
@@ -464,9 +466,11 @@ footer.entry-footer { display: none; }
 
 @media (min-width: 75em) { .site-header .header-wrapper .header-bottom .header-bottom-wrapper .site-branding h1.site-title .logo-wrapper img { height: 3.75rem; } }
 
-body.en-US .site-header .header-wrapper .header-top .header-top-inner-wrapper .top-banner { font-size: 0.85rem; }
+body.en-US .site-header .header-wrapper .header-top .header-top-inner-wrapper .top-banner { font-size: 0.82rem; }
 
-@media (min-width: 23.125em) { body.en-US .site-header .header-wrapper .header-top .header-top-inner-wrapper .top-banner { font-size: 1rem; } }
+@media (min-width: 23.125em) { body.en-US .site-header .header-wrapper .header-top .header-top-inner-wrapper .top-banner { font-size: 0.95rem; } }
+
+@media (min-width: 25em) { body.en-US .site-header .header-wrapper .header-top .header-top-inner-wrapper .top-banner { font-size: 0.98rem; } }
 
 @media (min-width: 37.5em) { body.en-US .site-header .header-wrapper .header-top .header-top-inner-wrapper .top-banner { font-size: 1.15rem; } }
 

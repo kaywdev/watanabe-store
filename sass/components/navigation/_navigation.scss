@@ -294,10 +294,12 @@ body.en-US{
 				.header-bottom-wrapper{
 					.main-navigation{
 						.menu-wrapper{
-	
+							@include mq($mq600){
+							top:5.8rem;
+							}
 							@include mq($mq800){
 								display:block;
-								top:0.5rem;
+								top:1rem;
 							}
 							@include mq($mq1024){
 								display:none;

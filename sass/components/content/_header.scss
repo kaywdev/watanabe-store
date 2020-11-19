@@ -138,14 +138,16 @@
 //En ver
 body.en-US{
     .site-header{
-        .header-wrapper{
-            
+        .header-wrapper{        
             .header-top {
                 .header-top-inner-wrapper {
                     .top-banner{
-                        font-size:0.85rem;
+                        font-size:0.82rem;
                         @include mq($mq370){
-                            font-size:1rem;
+                            font-size:0.95rem;
+                        }
+                        @include mq($mq400){
+                            font-size:0.98rem;
                         }
                         @include mq($mq600){
                             font-size:1.15rem;
