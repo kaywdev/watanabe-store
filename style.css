@@ -1157,27 +1157,27 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 /*--------------------------------------------------------------
 ## Front page
 --------------------------------------------------------------*/
-.home .site .site-main .entry-content h3 { font-family: "source-han-serif-japanese", serif; color: #126C42; font-size: 1.5rem; justify-content: center; display: inline-flex; align-items: center; width: 100%; }
+.home .site .site-main .entry-content h2 { font-family: "source-han-serif-japanese", serif; color: #126C42; font-size: 1.5rem; justify-content: center; display: inline-flex; align-items: center; width: 100%; }
 
-@media (min-width: 37.5em) { .home .site .site-main .entry-content h3 br { display: none; } }
+@media (min-width: 37.5em) { .home .site .site-main .entry-content h2 br { display: none; } }
 
-@media (min-width: 64em) { .home .site .site-main .entry-content h3 { font-size: 1.875rem; } }
+@media (min-width: 64em) { .home .site .site-main .entry-content h2 { font-size: 1.875rem; } }
 
-@media (min-width: 75em) { .home .site .site-main .entry-content h3 { font-size: 2.2rem; } }
+@media (min-width: 75em) { .home .site .site-main .entry-content h2 { font-size: 2.2rem; } }
 
-.home .site .site-main .entry-content h3 .h-icon { margin: 0px 10px; width: 33px; height: 33px; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.home .site .site-main .entry-content h2 .h-icon { margin: 0px 10px; width: 33px; height: 33px; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
 
-@media (min-width: 64em) { .home .site .site-main .entry-content h3 .h-icon { width: 40px; height: 40px; } }
+@media (min-width: 64em) { .home .site .site-main .entry-content h2 .h-icon { width: 40px; height: 40px; } }
 
-@media (min-width: 100em) { .home .site .site-main .entry-content h3 .h-icon { width: 44px; height: 44px; } }
+@media (min-width: 100em) { .home .site .site-main .entry-content h2 .h-icon { width: 44px; height: 44px; } }
 
-.home .site .site-main .entry-content h3 .sp-icon { background-color: #4B2C34; mask-image: url(images/icons/front/sp-icon.svg); -webkit-mask-image: url(images/icons/front/sp-icon.svg); mask-position: center 0.3rem; -webkit-mask-position: center 0.3rem; }
+.home .site .site-main .entry-content h2 .sp-icon { background-color: #4B2C34; mask-image: url(images/icons/front/sp-icon.svg); -webkit-mask-image: url(images/icons/front/sp-icon.svg); mask-position: center 0.3rem; -webkit-mask-position: center 0.3rem; }
 
-.home .site .site-main .entry-content h3 .dl-icon { background-color: #4B2C34; mask-image: url(images/icons/front/fp-truck.svg); -webkit-mask-image: url(images/icons/front/fp-truck.svg); mask-position: center 0.4rem; -webkit-mask-position: center 0.4rem; }
+.home .site .site-main .entry-content h2 .dl-icon { background-color: #4B2C34; mask-image: url(images/icons/front/fp-truck.svg); -webkit-mask-image: url(images/icons/front/fp-truck.svg); mask-position: center 0.4rem; -webkit-mask-position: center 0.4rem; }
 
-@media (min-width: 64em) { .home .site .site-main .entry-content h3 .dl-icon { mask-position: center 0.6rem; -webkit-mask-position: center 0.6rem; } }
+@media (min-width: 64em) { .home .site .site-main .entry-content h2 .dl-icon { mask-position: center 0.6rem; -webkit-mask-position: center 0.6rem; } }
 
-.home .site .site-main .entry-content h3 .loc-icon { background-color: #4B2C34; mask-image: url(images/icons/front/shop.svg); -webkit-mask-image: url(images/icons/front/shop.svg); }
+.home .site .site-main .entry-content h2 .loc-icon { background-color: #4B2C34; mask-image: url(images/icons/front/shop.svg); -webkit-mask-image: url(images/icons/front/shop.svg); }
 
 .home .site .site-main .entry-content .fp-main { margin-bottom: -0.4rem; }
 
@@ -1197,9 +1197,9 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 @media (min-width: 81.25em) { .home .site .site-main .entry-content .deli-loc { padding: 0; } }
 
-@media (min-width: 64em) { .home .site .site-main .entry-content .deli-loc h4, .home .site .site-main .entry-content .deli-loc p { font-size: 1.4rem; } }
+@media (min-width: 64em) { .home .site .site-main .entry-content .deli-loc h3, .home .site .site-main .entry-content .deli-loc p { font-size: 1.4rem; } }
 
-@media (min-width: 120em) { .home .site .site-main .entry-content .deli-loc h4, .home .site .site-main .entry-content .deli-loc p { font-size: 1.75rem; } }
+@media (min-width: 120em) { .home .site .site-main .entry-content .deli-loc h3, .home .site .site-main .entry-content .deli-loc p { font-size: 1.75rem; } }
 
 @media (min-width: 37.5em) { .home .site .site-main .entry-content .deli-loc .wp-block-column .shop-info-wrapper { min-height: 23rem; } }
 
@@ -1227,9 +1227,9 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 @media (min-width: 120em) { .home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper .deli-item-wrapper .wp-block-group__inner-container { grid-template-columns: 24% 1fr; } }
 
-.home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper .deli-item-wrapper .wp-block-group__inner-container h4 { margin: 0; font-weight: 400; justify-self: end; }
+.home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper .deli-item-wrapper .wp-block-group__inner-container h3 { margin: 0; font-weight: 400; justify-self: end; }
 
-@media (min-width: 75em) { .home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper .deli-item-wrapper .wp-block-group__inner-container h4 { justify-self: start; } }
+@media (min-width: 75em) { .home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper .deli-item-wrapper .wp-block-group__inner-container h3 { justify-self: start; } }
 
 .home .site .site-main .entry-content .deli-loc .fp-delivery .deli-text-wrapper .deli-item-wrapper .wp-block-group__inner-container p { margin: 0; justify-self: start; text-align: left; }
 
@@ -1281,7 +1281,7 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 @media (min-width: 120em) { .home .site .site-main .entry-content .deli-loc .fp-location .location-text-wrapper .wp-block-group__inner-container .loc-list-wrapper .wp-block-group__inner-container { grid-template-columns: 28% 1fr; } }
 
-.home .site .site-main .entry-content .deli-loc .fp-location .location-text-wrapper .wp-block-group__inner-container .loc-list-wrapper .wp-block-group__inner-container h4 { margin: 0; font-weight: 400; }
+.home .site .site-main .entry-content .deli-loc .fp-location .location-text-wrapper .wp-block-group__inner-container .loc-list-wrapper .wp-block-group__inner-container h3 { margin: 0; font-weight: 400; }
 
 .home .site .site-main .entry-content .deli-loc .fp-location .location-text-wrapper .wp-block-group__inner-container .loc-list-wrapper .wp-block-group__inner-container p { margin: 0; }
 
