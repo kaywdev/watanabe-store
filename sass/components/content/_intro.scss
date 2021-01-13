@@ -1,10 +1,11 @@
-p.intro{
+.intro{
     font-family: $font__heading-jp;
     font-size: 1.35rem;
     text-align: center;
     position: relative;
     z-index: 2;
     padding: 0 5%;
+    font-weight: 400;
     span{
         font-size:2rem;
     }
@@ -116,7 +117,7 @@ p.intro{
 body.en-US{
     .site-main{
         .entry-content{
-            p.intro{
+            .intro{
                 font-family:$font__heading-en;
                 padding: 0 10%;
                 font-size:1.375rem;
