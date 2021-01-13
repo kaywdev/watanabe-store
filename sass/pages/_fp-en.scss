@@ -4,7 +4,7 @@
            #post-23{
             .special .wp-block-group__inner-container,
             .wp-block-column{
-                >h3{
+                >h2{
                     font-size:1.75rem;
                     @include mq($mq1024){
                         font-size:2.2rem;
@@ -15,7 +15,7 @@
                 }
             }
             .deli-loc{
-                h4,p{
+                h3,p{
                     font-size:1.25rem;
                     @include mq($mq1600){
                         font-size:1.5rem;
@@ -24,7 +24,7 @@
                         font-size:1.74rem;
                     }
                 }
-                h4{
+                h3{
                     margin:0;
                 }
                 p{
