@@ -20,19 +20,18 @@ p.intro{
     @include mq($mq1024){
         font-size:2rem;
         max-width:52rem;
-        margin:3rem auto;
+        margin:1rem auto 3rem;
         span{
             font-size:2.5rem;
         }
     }
     @include mq($mq1240){
         max-width:75rem;
-        margin:5rem auto;
     }
     
     @include mq($mq1600){
         font-size:2.5rem;
-        padding: 2.5rem 0;
+        padding: 0.5rem 0 2rem;
         span{
             font-size:4rem;
         }
@@ -90,14 +89,14 @@ p.intro{
                 max-width:58rem; 
             } 
             @include mq($mq1240){    
-                max-width:69rem;
+                max-width:70rem;
             }
             @include mq($mq1600){
                 font-size:2rem;
             } 
             @include mq($mq1920){
                 font-size:2.3rem;
-                max-width:75rem; 
+                max-width:76rem; 
             }
             br{
                 @include mq($mq600){

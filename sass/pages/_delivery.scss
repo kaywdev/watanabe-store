@@ -4,7 +4,7 @@
             .deli-info-wrapper{
                 padding: 0 5%;
                 max-width: 1200px;
-                margin: 0 auto;
+                margin: 0 auto 3rem;
 
                 @include mq($mq1350){
                     padding:0;
