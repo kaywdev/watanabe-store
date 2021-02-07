@@ -201,6 +201,7 @@
                                 top: 50%;
                                 left: 50%;
                                 transform: translate(-50%, -50%);
+                                margin-top: 0.4rem;
                                 @include mq($mq1100){
                                     width: 17rem;
                                     height: 17rem;
@@ -320,12 +321,13 @@
                             mask-repeat: no-repeat;
                             width: 16rem;
                             height: 19rem;
-                            transform: rotate(30deg);
+                            transform: translateY(-50%) rotate(30deg);
                             background-color: $color__background-brown-lighter;
                             mask-image:url(images/icons/about/leaf.svg);
                             -webkit-mask-image:url(images/icons/about/leaf.svg);
-
+                            top:50%;
                                 @include mq($mq1024){
+                                    top:0;
                                     transform: rotate(30deg) translate(20%, 20%);  
                                 }
                                 @include mq($mq1920){
