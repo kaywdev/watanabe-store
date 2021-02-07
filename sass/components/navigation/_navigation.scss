@@ -85,7 +85,7 @@
 		border-radius: 10%;
 
 		@include mq($mq600){
-			top: 5.5rem;
+			top: 6rem;
 		}
 		
 		.menu{
@@ -295,7 +295,7 @@ body.en-US{
 					.main-navigation{
 						.menu-wrapper{
 							@include mq($mq600){
-							top:5.8rem;
+							top:6rem;
 							}
 							@include mq($mq800){
 								display:block;

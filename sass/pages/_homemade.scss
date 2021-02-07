@@ -8,15 +8,21 @@
             }
             .wp-block-group__inner-container{
                 h3{
-                    font-size:2.2rem;
+                    font-size:2rem;
                     color:$color__green;
                     font-family:$font__heading-jp;
                     margin-bottom:0;
+                    padding: 0 5%;
+                    @include mq($mq600){
+                        br{
+                            display:none;
+                        }
+                    }
                     @include mq($mq1024){
-                        font-size: 2.5rem;
+                        font-size: 2.3rem;
                     }
                     @include mq($mq1600){
-                        font-size: 3.25rem;
+                        font-size: 3rem;
                     }
                 }
                 .hm-text-wrapper{
@@ -351,26 +357,30 @@
                 }
             }
             .hm-text-wrapper{
-                ul{
-                    grid-template-columns: 60% 40% !important;
-                    @include mq($mq600){
-                        grid-template-columns:50% 50% !important;  
-                    }
-                    li{
+                .wp-block-group__inner-container{
+                    ul{
+                        grid-template-columns: 60% 40% !important;
                         @include mq($mq600){
-                            &:nth-of-type(3){
-                                margin-left: -0.75rem;
-                            }
-                            &:last-of-type{ 
-                                margin-left: 1.45rem !important;
-                                @include mq($mq1000){
-                                    margin-left: 1.75rem !important; 
+                            grid-template-columns:50% 50% !important;  
+                        }
+                        li{
+                            @include mq($mq600){
+                                &:nth-of-type(3){
+                                    margin-left: -0.75rem;
+                                }
+                                &:last-of-type{ 
+                                    margin-left: 1.45rem !important;
+                                    @include mq($mq1000){
+                                        margin-left: 1.75rem !important;
+                                    }
+                                    @include mq($mq1024){
+                                        padding-right: 0rem !important;
+                                    }
                                 }
                             }
-                        }
-                    }    
+                        }    
+                    }
                 }
- 
             }
         }
     }

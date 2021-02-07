@@ -4,7 +4,7 @@
             .deli-info-wrapper{
                 padding: 0 5%;
                 max-width: 1200px;
-                margin: 0 auto 3rem;
+                margin: 0 auto 1rem;
 
                 @include mq($mq1350){
                     padding:0;
@@ -118,6 +118,35 @@
                             }
                         }
                     }
+                    .deli-info-top,
+                    .deli-info-bottom{
+                        .wp-block-column{
+                            h3{
+                                font-size:1.125rem;
+                                @include mq($mq850){
+                                    font-size:1.5rem;
+                                }
+                                @include mq($mq1000){
+                                    font-size:2rem;
+                                }
+                                @include mq($mq1600){
+                                    font-size:2.2rem;
+                                }
+                            }
+                            p{
+                                font-size:1rem;
+                                @include mq($mq850){
+                                    font-size:1.5rem;
+                                }
+                                @include mq($mq1200){
+                                    font-size:1.8rem;
+                                }
+                                @include mq($mq1600){
+                                    font-size:2rem;
+                                }
+                            }
+                        }
+                    }
                     .deli-info-top{
                         margin-bottom:0;
                         @include mq($mq600){
@@ -149,30 +178,7 @@
                                         height:10.25rem; 
                                     }
                                 }
-                                h3{
-                                    font-size:1.125rem;
-                                    @include mq($mq850){
-                                        font-size:1.5rem;
-                                    }
-                                    @include mq($mq1200){
-                                        font-size:2rem;
-                                    }
-                                    @include mq($mq1600){
-                                        font-size:2.2rem;
-                                    }
-                                }
-                                p{
-                                    font-size:1rem;
-                                    @include mq($mq850){
-                                        font-size:1.5rem;
-                                    }
-                                    @include mq($mq1200){
-                                        font-size:1.8rem;
-                                    }
-                                    @include mq($mq1600){
-                                        font-size:2rem;
-                                    }
-                                }
+
                             }
                             
                             .deli-apt{
@@ -206,35 +212,6 @@
                             display:inline-grid;
                             grid-template-columns: 1fr 1fr;
                             grid-gap:3%;
-                        }
-                        h3{
-                            @include mq($mq600){
-                                font-size:1.375rem;
-                            }
-                            @include mq($mq850){
-                                font-size:1.5rem;
-                                padding-bottom: 0.5rem;
-                            }
-                            @include mq($mq1000){
-                                font-size:2rem;
-                            }
-                            @include mq($mq1600){
-                                font-size:2.45rem;
-                            }
-                        }
-                        p{
-                            @include mq($mq600){
-                                font-size:1.1rem;
-                            }
-                            @include mq($mq850){
-                                font-size:1.4rem;
-                            }
-                            @include mq($mq1000){
-                                font-size:1.7rem;
-                            }
-                            @include mq($mq1600){
-                                font-size:2.3rem;
-                            }
                         }
                         .deli-icon{
                             @include mq($mq600){
@@ -307,6 +284,16 @@
                         
                     }
                 }  
+            }
+            .extra-delivery-info{
+                padding: 0 5%;
+                font-size: 1.2rem;
+                padding-bottom: 3rem;
+                max-width: 1200px;
+                margin:0 auto;
+                @include mq($mq1024){
+                    font-size: 1.5rem;
+                }
             }
         }
     }
