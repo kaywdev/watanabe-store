@@ -1500,7 +1500,7 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 @media (min-width: 64em) { .homemade .entry-content .hm-wrapper .wp-block-group__inner-container h3 { font-size: 2.3rem; } }
 
-@media (min-width: 100em) { .homemade .entry-content .hm-wrapper .wp-block-group__inner-container h3 { font-size: 3rem; } }
+@media (min-width: 100em) { .homemade .entry-content .hm-wrapper .wp-block-group__inner-container h3 { font-size: 2.8rem; } }
 
 .homemade .entry-content .hm-wrapper .wp-block-group__inner-container .hm-text-wrapper { padding: 0 5%; position: relative; z-index: 1; }
 
@@ -1642,7 +1642,7 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 @media (min-width: 64em) { .about .entry-content .about-sec h3 { font-size: 2.3rem; } }
 
-@media (min-width: 100em) { .about .entry-content .about-sec h3 { font-size: 3rem; } }
+@media (min-width: 100em) { .about .entry-content .about-sec h3 { font-size: 2.8rem; } }
 
 .about .entry-content .about-sec p { font-size: 1.25rem; }
 
