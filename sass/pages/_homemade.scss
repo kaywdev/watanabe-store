@@ -371,7 +371,7 @@
                                 &:last-of-type{ 
                                     margin-left: 1.45rem !important;
                                     @include mq($mq1000){
-                                        margin-left: 1.75rem !important; 
+                                        margin-left: 1.75rem !important;
                                     }
                                     @include mq($mq1024){
                                         padding-right: 0rem !important;
