@@ -1,0 +1,216 @@
+.site-header{
+    position: relative;
+    .roof{
+        background-image:url(images/header/roof.png);
+        background-repeat: repeat-x;
+        width: 100%;
+        height: 5rem;
+        display: block;
+        background-size: contain;
+    }
+   .header-wrapper{
+        position: relative;
+        .header-top{
+            max-width: 1400px;
+            margin:0 auto;
+            .header-top-inner-wrapper{
+                    width:100%;
+                    display: inline-grid;
+                    grid-template-areas: 
+                        "banner banner"
+                        "est lang";
+                    align-items: center;
+                    padding: 0 5%;
+
+                    @include mq($mq670){
+                        grid-template-areas: 
+                        "est banner lang";
+                    }
+
+                    @include mq($mq1024){
+                        padding: 0 8%;
+                    }
+                
+                .est{
+                    @include en-serif-heading();
+                    color:$color__green;
+                    grid-area:est;
+                    margin: 0;
+                    font-size: 1.2rem;
+
+                    @include mq($mq1024){
+                        font-size:1.5rem;
+                    }
+                }
+                .top-banner{
+                    grid-area: banner;
+                    text-align: center;
+                    font-size:1.12rem;
+                    @include mq($mq600){
+                        font-size:1.2rem;
+                    }
+                    @include mq($mq1024){
+                        font-size:1.3rem;
+                    }
+                }
+                .bogo-language-switcher{
+                    display:flex;
+                    grid-area: lang;
+                    padding:0;
+                    margin:0;
+                    justify-self: end;
+                            a{
+                                text-decoration: none;
+                                @include en-serif-heading();
+                                color:#B4B4B4;
+                                padding: 0px 5px;
+                                font-size: 1.2rem;
+                            }
+                            a.current{
+                                color:$color__green;;
+                            }
+                        
+                    .ja{
+                        order:1;
+                        &::after{
+                            content:'/';
+                        }
+                    }
+                    .en-US{
+                        order:2;
+                    }
+                }
+            }    
+        }
+       .header-bottom{
+            margin-top: -1rem;
+            background-color:$color__green;
+            
+            .header-bottom-wrapper{
+                max-width: 1400px;
+                margin:0 auto;
+                position: relative;
+                .site-branding{
+                    h1.site-title{
+                                margin-bottom:0;
+                                margin-top: 1rem;
+                                .logo-wrapper {
+                                    padding: 0.5rem 5%;
+                                    height: auto;
+                                    width:100%;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    @include mq($mq500){
+                                        justify-content: left;
+                                    }
+                                    @include mq($mq600){
+                                        width:65%;
+                                    }
+                                    @include mq($mq800){
+                                        width:52%;
+                                    }
+
+                                    @include mq($mq1024){
+                                        padding: 0.7rem 8%;
+                                    }
+
+                                    img{
+                                        @include mq($mq1024){
+                                            height:3rem;
+                                        }
+                                        @include mq($mq1200){
+                                            height:3.75rem;
+                                        }
+
+                                    }
+
+                                }
+                            }
+                    
+                }
+            }
+        }
+    }
+}
+
+//En ver
+body.en-US{
+    .site-header{
+        .header-wrapper{        
+            .header-top {
+                .header-top-inner-wrapper {
+                    .top-banner{
+                        font-size:0.82rem;
+                        @include mq($mq370){
+                            font-size:0.95rem;
+                        }
+                        @include mq($mq400){
+                            font-size:0.98rem;
+                        }
+                        @include mq($mq600){
+                            font-size:1.15rem;
+                        }
+                        @include mq($mq1024){
+                            font-size:1.3rem;
+                        }
+
+                    }
+                }
+
+            }
+            .header-bottom{
+                margin-top:0;
+                .header-bottom-wrapper{
+                    padding:0 5%;
+                    @include mq($mq1024){
+                        padding:0;
+                        max-width: 1170px;
+                        margin:0 auto;
+                    }
+                    .site-branding{
+                    h1.site-title{
+                        margin-top:0;
+                        .logo-wrapper{
+                            padding: 0;
+                            margin-top: 0.8rem;
+                            object-fit: cover;
+                            @include mq($mq500){
+                                padding: 0.5rem 0;  
+                            }
+                           @include mq($mq600){
+                             max-width:28.125rem;
+                             margin-top:0;
+                           }
+                            @include mq($mq1024){
+                                padding-left:8%;
+                                max-width:32rem;
+                            }
+                            @include mq($mq1200){
+                                padding-left:6%;
+                                max-width:34rem;
+                            }
+                            @include mq($mq1240){
+                                padding-left:3%; 
+                            }
+                            @include mq($mq1350){
+                                padding-left:0; 
+                            }
+                           
+
+                            img{
+                                height:3rem;
+                                @include mq($mq670){
+                                    height:3.2rem; 
+                                }
+                            }
+                        }
+                    } 
+                    }   
+                }
+            }
+        }
+       
+    }
+}

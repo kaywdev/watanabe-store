@@ -1,0 +1,30 @@
+// Function to
+// Convert Px to Ems
+@function em($px, $bc: 16){
+    @return #{$px/$bc}em; 
+}
+
+// Media Query Breakpoints
+$mq1920:em(1920); //desktoplarge
+$mq1600:em(1600); //desktopsmall
+$mq1350:em(1350); //special tag bp
+$mq1300:em(1300);//bp for header nav 
+$mq1240:em(1240); //bp for 2 column in fp
+$mq1200:em(1200); //laptop
+$mq1130:em(1130); //bp for iframe
+$mq1100:em(1100); // bp for deli-apt
+$mq1024:em(1024); //tabletLandscape
+$mq1000:em(1000);//tabletPortraitLarge
+$mq920:em(920); //bp for iframe
+$mq900:em(900);//bp for iframe
+$mq850:em(850);//tabletPortrait
+$mq800:em(800);//tabletPortrait
+$mq768:em(768); //ipad Portrait
+$mq710:em(710); //bp for iframe
+$mq670:em(670);//phoneLandscape
+$mq615:em(615);//phoneLandscapeSmall
+$mq600:em(600);//bp for 2 columns
+$mq500:em(500);//phonePortraitLarge
+$mq420:em(420);//phonePortrait
+$mq400:em(400); //iphone 6 plus
+$mq370:em(370); //iphone6 +

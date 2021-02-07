@@ -1,0 +1,92 @@
+.page-id-23{
+    .site{
+        .site-main{
+           #post-23{
+            .special .wp-block-group__inner-container,
+            .wp-block-column{
+                >h2{
+                    font-size:1.75rem;
+                    @include mq($mq1024){
+                        font-size:2.2rem;
+                    }
+                    @include mq($mq1600){
+                        font-size:2.6rem;
+                    }
+                }
+            }
+            .deli-loc{
+                h3,p{
+                    font-size:1.25rem;
+                    @include mq($mq1600){
+                        font-size:1.5rem;
+                    }
+                    @include mq($mq1920){
+                        font-size:1.74rem;
+                    }
+                }
+                h3{
+                    margin:0;
+                }
+                p{
+                    margin-top:0.5rem;
+                }
+                .wp-block-column{
+                    .shop-info-wrapper{
+                        @include mq($mq600){
+                            min-height: 31rem;
+                        }
+                        @include mq($mq670){
+                            min-height: 28rem;
+                        }
+
+                        @include mq($mq1024){
+                            min-height: 25rem;
+                        }
+
+                        @include mq($mq1600){
+                            min-height: 28rem;
+                        }
+
+                        @include mq($mq1920){
+                            min-height: 35rem;
+                        }
+                    }
+                }
+                .fp-delivery{
+                    .deli-text-wrapper{
+                        .apt-text{
+                            @include mq($mq1024){
+                                br{
+                                    display:none;
+                                }
+                            }
+                        }
+                        .wp-block-buttons {
+                            .wp-block-button{
+                                a.wp-block-button__link{
+                                    width:initial;
+                                }
+                                @include mq($mq1240){
+                                    padding-bottom:2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .fp-location{
+                    .wp-block-group.location-text-wrapper{
+                       .access-text{
+                           @include mq($mq1024){
+                                br{
+                                    display:none;
+                                }
+                            }
+                       } 
+                    }
+                }
+            }
+            
+           } 
+        }
+    }
+}

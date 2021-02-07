@@ -1,0 +1,387 @@
+.homemade{
+    .entry-content{
+        .hm-wrapper{
+            padding-bottom:3rem;
+            overflow: hidden;
+            @include mq($mq600){
+                padding:5%;
+            }
+            .wp-block-group__inner-container{
+                h3{
+                    font-size:2rem;
+                    color:$color__green;
+                    font-family:$font__heading-jp;
+                    margin-bottom:0;
+                    padding: 0 5%;
+                    @include mq($mq600){
+                        br{
+                            display:none;
+                        }
+                    }
+                    @include mq($mq1024){
+                        font-size: 2.3rem;
+                    }
+                    @include mq($mq1600){
+                        font-size: 3rem;
+                    }
+                }
+                .hm-text-wrapper{
+                    padding: 0 5%;
+                    position: relative;
+                    z-index: 1;
+
+                    &::after{
+                        content:'';
+                        position:absolute;
+                        z-index:-1;
+                        display:block; 
+                        mask-position: center center;
+                        -webkit-mask-position: center center;
+                        -webkit-mask-size: contain;
+                        mask-size:contain;
+                        mask-repeat: no-repeat;
+                    }
+                    .wp-block-group__inner-container{
+                     padding-bottom:1rem;  
+                        @include mq($mq600){
+                            padding-bottom:2rem; 
+                        }                     
+                        p,
+                        ul li{
+                            font-size:1.25rem;
+                            @include mq($mq1024){
+                                font-size:1.4rem;  
+                            }
+                            @include mq($mq1100){
+                                font-size:1.5rem;
+                            }
+                            @include mq($mq1600){
+                                font-size:1.75rem;
+                            }
+
+                        }
+                        ul{
+                            margin:0;
+                            padding: 0;
+                            width: 100%;
+                            display: inline-grid;
+                            grid-template-columns: 40% 1fr;
+                            justify-content: center;
+                            align-items: center;
+                            margin-left: 8%;
+                            @include mq($mq600){
+                                justify-items: center;
+                                margin-left:0;
+                            }
+                        }
+                        p{
+                            &:not(:last-of-type){
+                                @include mq($mq600){
+                                    margin-bottom:0;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                figure.wp-block-image{
+                    position: relative;
+                    z-index: 2;
+                    @include mq($mq600){
+                        grid-area:hm-img;
+                        max-width: 27rem;
+                        margin: 0 auto;
+                    }
+                    @include mq($mq1100){
+                        min-width: 32rem;
+                    }
+                }
+            }
+        }
+        .hm-pickles,
+        .hm-fish,
+        .hm-veg{
+            .hm-inner-wrapper{
+                max-width: 1200px;
+                margin: 0 auto;
+                >.wp-block-group__inner-container{
+
+                    @include mq($mq850){
+                        display:inline-grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-areas:
+                        "hm-title hm-title" 
+                        "hm-text hm-img";
+                        align-items: center;
+                    }
+
+                    h3{
+                        @include mq($mq600){
+                        margin-top:0;
+                        grid-area:hm-title;
+                        } 
+                    }
+                    .hm-text-wrapper{
+                        grid-area:hm-text; 
+                    }
+                }
+            }
+        }
+        .hm-pickles{
+            background-color:$color__background-green;
+            padding-bottom: 4rem;
+            .wp-block-group__inner-container{
+                .hm-text-wrapper{ 
+                    &::after{
+                        bottom: -20%;
+                        left: -50%;
+                        width: 28.25rem;
+                        height: 30rem;
+                        background-color: $color__background-green-lighter;
+                        mask-image:url(images/icons/homemade/nappa.svg);
+                        -webkit-mask-image:url(images/icons/homemade/nappa.svg);
+                        @include mq($mq370){
+                            left: -33%;  
+                        }
+                        @include mq($mq600){
+                            left:-18%;
+                            top: 8%;
+                            width: 34rem;
+                            height: 32rem;
+                        }
+                        @include mq($mq850){
+                            left: 50%;
+                            top: 50%;
+                            width: 22rem;
+                            height: 25rem;
+                            transform: translate(-50%, -50%);
+                        }
+                        @include mq($mq1024){
+                            width: 25rem;
+                            height: 28rem;
+                        }
+                        @include mq($mq1600){
+                            width: 30rem;
+                            height: 32rem;
+                        }
+                    }       
+                }
+            }
+        }
+        .hm-fish{
+            background-color:$color__background-blue;
+            .hm-inner-wrapper{
+                .wp-block-group__inner-container{
+                    @include mq($mq850){
+                        grid-template-areas:
+                        "hm-title hm-title" 
+                        "hm-img hm-text";
+                    }  
+                    .hm-text-wrapper{ 
+                        z-index:2;     
+                        &::after{
+                            bottom: -13%;
+                            right: -50%;
+                            width: 28.25rem;
+                            height: 30rem;
+                            transform: scaleX(-1);
+                            background-color: $color__background-blue-lighter;
+                            mask-image:url(images/icons/homemade/fish.svg);
+                            -webkit-mask-image:url(images/icons/homemade/fish.svg);
+                            @include mq($mq370){
+                                right: -33%;  
+                            }
+                            @media all and (orientation:landscape){
+                                bottom: -30%;
+                            }
+                            @include mq($mq600){
+                                height: 36rem;
+                                top: 0%;
+                                right: -24%
+                            }
+                            @media screen and (min-width:600px) and (orientation:landscape){
+                                top:0;
+                            }
+                            @include mq($mq850){
+                                left: 50%;
+                                top: 50%;
+                                width: 22rem;
+                                height: 25rem;
+                                transform: translate(-50%, -50%) scaleX(-1);
+                            }
+                            @include mq($mq1024){
+                                width: 25rem;
+                                height: 28rem;
+                            }
+                            @include mq($mq1600){
+                                width: 30rem;
+                                height: 32rem;
+                            }
+                            
+                        }
+                        .wp-block-group__inner-container{                
+                            p{
+                                &:last-of-type{
+                                    margin-bottom:0;
+                                }
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+        .hm-veg{
+            .hm-inner-wrapper{
+                .wp-block-group__inner-container{
+                    @include mq($mq850){
+                        grid-template-areas:
+                        "hm-title hm-title" 
+                        "hm-text hm-img";
+                    }  
+                    .hm-text-wrapper{      
+                        &::after{
+                            bottom: -13%;
+                            left: -50%;
+                            width: 28.25rem;
+                            height: 30rem;
+                            background-color: $color__background-brown-lighter;
+                            mask-image:url(images/icons/homemade/bamboo.svg);
+                            -webkit-mask-image:url(images/icons/homemade/bamboo.svg);
+                            @include mq($mq370){
+                                left: -33%;  
+                            }
+                            @include mq($mq600){
+                                height: 36rem;
+                                bottom: -50%;
+                                left: -24%
+                            }
+                            @include mq($mq850){
+                                left: 50%;
+                                top: 50%;
+                                width: 22rem;
+                                height: 25rem;
+                                transform: translate(-50%, -50%);
+                            }
+                            @include mq($mq1024){
+                                width: 25rem;
+                                height: 28rem;
+                            }
+                            @include mq($mq1600){
+                                width: 30rem;
+                                height: 32rem;
+                            }
+                            
+                        }
+                        .wp-block-group__inner-container{                
+                            ul{
+                                grid-template-columns: 50% 50%; 
+                                @include mq($mq600){
+                                    li{
+                                        &:last-of-type{
+                                            padding-right: 3.8rem;
+                                            @include mq($mq1024){
+                                                padding-right: 4.5rem; 
+                                            }
+                                            @include mq($mq1600){
+                                                padding-right: 5.3rem; 
+                                            }
+                                        }
+                                    }
+                                } 
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}
+
+//En version
+.en-US.homemade{
+    .entry-content{
+        .hm-wrapper.hm-pickles{
+            .hm-text-wrapper{
+                ul{
+                    grid-template-columns: 40% 60%;
+                    grid-gap:2%;
+                    @include mq($mq370){
+                        grid-gap: 10%;
+                        grid-template-columns: 30% 55%;
+                    }
+                    @include mq($mq850){
+                        grid-gap: 0; 
+                    }
+                    @include mq($mq1000){
+                        grid-template-columns: 40% 60%; 
+                    }
+
+                    .list-left{
+                    align-self: center;
+                    height: 100%;
+                        @include mq($mq500){
+                            align-self:start;
+                            li{
+                                &:nth-of-type(2){
+                                    line-height: 4.5;
+                                    @include mq($mq670){
+                                        line-height: inherit;
+                                    }
+                                    @include mq($mq1000){
+                                        line-height: 4.5;  
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                    .list-right{
+                        @include mq($mq670){
+                            li{
+                                br{
+                                    display:none;
+                                    @include mq($mq850){
+                                        display:block;
+                                    }
+                                }
+                            }
+                        }
+                    }  
+                }
+            }
+        }
+        .hm-wrapper.hm-veg{
+            h3{
+                padding: 0 2%;
+                @include mq($mq600){
+                    padding:0;
+                }
+            }
+            .hm-text-wrapper{
+                .wp-block-group__inner-container{
+                    ul{
+                        grid-template-columns: 60% 40% !important;
+                        @include mq($mq600){
+                            grid-template-columns:50% 50% !important;  
+                        }
+                        li{
+                            @include mq($mq600){
+                                &:nth-of-type(3){
+                                    margin-left: -0.75rem;
+                                }
+                                &:last-of-type{ 
+                                    margin-left: 1.45rem !important;
+                                    @include mq($mq1000){
+                                        margin-left: 1.75rem !important; 
+                                    }
+                                    @include mq($mq1024){
+                                        padding-right: 0rem !important;
+                                    }
+                                }
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+}

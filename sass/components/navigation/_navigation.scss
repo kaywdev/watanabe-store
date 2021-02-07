@@ -1,0 +1,401 @@
+.main-navigation {
+	display: block;
+	width: 100%;
+	position: absolute;
+	top:-5rem;
+	right: 0;
+
+	@include mq($mq800){
+		position: initial;
+	}
+
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: auto;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+	.menu-wrapper{
+		position:absolute;
+		top: -2.5rem;
+    	right: 5%;
+		background-color:$color__green;
+		width:40px;
+		height: 40px;
+		border-radius: 10%;
+
+		@include mq($mq600){
+			top: 6rem;
+		}
+		
+		.menu{
+			padding: 5px;
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition-duration: 0.5s;
+			margin-top: 0.2rem;
+			z-index: 5;
+	
+			.icon{
+				transition-duration: 0.5s;
+				position:absolute;
+				width:30px;
+				height:3px;
+				border-radius: 20px;
+				top:15px;
+				background-color:$color__background-gray;
+				z-index: 3;
+				&:before{
+					transition-duration: 0.5s;
+					position:absolute;
+					border-radius: 20px;
+					width:30px;
+					height: 3px;
+					background-color:$color__background-gray;
+					content:"";
+					top:-10px;
+				}
+				&:after{
+					transition-duration: 0.5s;
+					position:absolute;
+					width:30px;
+					height: 3px;
+					border-radius: 20px;
+					background-color:$color__background-gray;
+					content:"";
+					top:10px;
+				}
+			}
+		}
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+button.menu-toggle {
+	position: absolute;
+	top:0;
+	right: 0;
+	z-index: 4;
+	margin-top: -3rem;
+
+	@include mq($mq600){
+		margin-top: 5.7rem;
+	}
+
+}
+.menu-menu-1-container{
+	ul{
+		li{
+			a{
+				font-family:$font__sptag-jp;
+				color:#ffffff;
+				@include mq($mq800){
+					font-size: 0.85rem;
+				}
+				@include mq($mq900){
+					font-size: 1rem;
+				}
+				@include mq($mq1024){
+					font-size: 1.1rem;
+				}
+				@include mq($mq1200){
+					font-size: 1.35rem;
+				}
+			}
+			}
+			
+		@include mq($mq800){
+			position: absolute;
+			top: 40%;
+			right: 0;
+			padding-right: 5%;
+		}
+		@include mq($mq1024){
+			top: 35%;
+			padding-right: 8%;
+		}
+		
+	}
+	
+	
+}
+	
+// After open hm-menu
+.main-navigation.toggled{
+
+	.menu-wrapper{
+		position: fixed;
+		z-index: 9;
+		top: 1.5rem;
+		right: 5%;
+		@media all and (orientation:landscape){
+			right: 2%;	
+		}
+		.menu{
+			.icon{
+				transition-duration: 0.5s;
+				transform:rotateZ(-180deg);
+				&:before{
+					transform:rotateZ(-45deg) scaleX(0.75) translate(-10px, -4px);
+				}
+				&:after{
+					transform:rotateZ(45deg) scaleX(0.75) translate(-10px, 4px);
+				}
+			}
+		}
+	}
+	.menu-menu-1-container{
+		background-color: $color__green;
+		height: 100%;
+		width: 200px;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 3;
+		ul#primary-menu {
+			top: 50%;
+			left: 50%;
+			position: absolute;
+			transform: translate(-50%, -50%);
+
+			li{
+				padding: 2rem 0;
+				border-bottom: 2px dashed $color__lightgray;
+				text-align: center;
+				width:100%;
+				&:first-child{
+					padding-top:0;
+				}
+			}
+		}
+		@media all and (orientation:landscape){
+			height: 100%;
+			ul#primary-menu {
+				margin-top:1rem;
+				li{
+					padding: 1rem 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 50em) {
+
+	.menu-wrapper {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+		li{
+			&:not(:last-of-type){
+				padding-right:1.2rem;
+			}
+		}
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav-previous {
+		flex: 1 0 50%;
+	}
+
+	.nav-next {
+		text-align: end;
+		flex: 1 0 50%;
+	}
+}
+
+//EN version
+body.en-US{
+	.site-header{
+		.header-wrapper{
+			.header-bottom{
+				.header-bottom-wrapper{
+					.main-navigation{
+						.menu-wrapper{
+							@include mq($mq600){
+							top:6rem;
+							}
+							@include mq($mq800){
+								display:block;
+								top:1rem;
+							}
+							@include mq($mq1024){
+								display:none;
+							}
+							.menu{
+
+								@include mq($mq800){
+									//margin-top:0.75rem;
+								}
+							}
+						}
+						.menu-menu-1-container{
+							ul.nav-menu{
+								@include mq($mq800){
+									display:none;
+								}
+								@include mq($mq1024){
+									display:flex;
+									top:30%;
+									
+								}
+								@include mq($mq1200){
+									padding-right:7%;
+								}
+								@include mq($mq1240){
+									padding-right:6%;
+								}
+								@include mq($mq1300){
+									padding-right:2.5%;
+								}
+								@include mq($mq1350){
+									padding-right:0;
+								}
+								@include mq($mq1600){
+									top:25%;
+								}
+	
+
+
+								li{
+									&:not(:last-of-type){
+
+										@include mq($mq1350){
+											padding-right:1.5rem;
+										}
+									}
+									a{
+										font-family:$font__heading-en; 
+										font-size:1.2rem;
+										font-weight: 600;
+										@include mq($mq1024){
+											font-size:1.15rem;
+										}
+										@include mq($mq1200){
+											font-size:1.3rem;
+										}
+										@include mq($mq1600){
+											font-size:1.4rem;
+										}
+									}
+								}
+							}
+						}	
+					}
+					nav.main-navigation.toggled{
+						.menu-wrapper{
+							@media all and (orientation:landscape){
+								top: 1.5rem;
+								right: 2%;	
+							}
+						}
+						.menu-menu-1-container{
+							ul{
+								@include mq($mq800){
+									display:block;
+									
+								}
+								@media all and (orientation:landscape){
+									top: 50%;
+									left: 50%;
+									position: absolute;
+									transform: translate(-50%, -50%);
+									min-height: 70%;
+								}
+								li{
+									width:65%;
+									margin:0 auto;
+									a{
+										font-family:$font__heading-en; 
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+/*
+ * Media Query
+ */
+ @mixin mq($w) {
+    @media (min-width: $w){
+        @content;
+    }
+}
+
+// Set serif heading
+@mixin jp-serif-heading(){
+	font-family: $font__heading-jp;
+	font-weight: 900;
+	font-style: normal;
+}
+
+@mixin en-serif-heading(){
+	font-family: $font__heading-en;
+	font-weight: 700;
+	font-style: normal;
+}

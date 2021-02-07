@@ -1,0 +1,168 @@
+.intro{
+    font-family: $font__heading-jp;
+    font-size: 1.35rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 0 5%;
+    font-weight: 400;
+    span{
+        font-size:2rem;
+    }
+    @include mq($mq500){
+        br:nth-of-type(2){
+            display:none;
+        }
+    }
+    @include mq($mq600){
+        max-width:42.3rem;
+        margin:2rem auto;
+    }
+    @include mq($mq1024){
+        font-size:2rem;
+        max-width:52rem;
+        margin:1rem auto 3rem;
+        span{
+            font-size:2.5rem;
+        }
+    }
+    @include mq($mq1240){
+        max-width:75rem;
+    }
+    
+    @include mq($mq1600){
+        font-size:2.5rem;
+        padding: 0.5rem 0 2rem;
+        span{
+            font-size:4rem;
+        }
+    }
+}
+.delivery{
+    .entry-content{
+        p.intro{
+            font-size:1.34rem;
+            br:nth-of-type(2){
+                display:none;
+                @include mq($mq670){
+                    display:block;
+                }
+            }
+            @include mq($mq600){
+                max-width:45rem;    
+            }
+
+            @include mq($mq1024){
+                max-width:63rem;
+                font-size:1.5rem; 
+            }
+            @include mq($mq1350){
+                max-width:68rem;
+                font-size:2rem;
+            }
+            @include mq($mq1920){
+                font-size:2.3rem; 
+            }
+        }
+    }
+}
+.homemade{
+    .entry-content{
+        p.intro{ 
+            br{
+                display:none;
+                @include mq($mq1240){    
+                   display:block;
+                }
+            }
+        }
+    }
+}
+
+.homemade,
+.about{
+    .entry-content{
+        p.intro{ 
+            @include mq($mq1024){
+                font-size:1.8rem; 
+            }  
+            @include mq($mq1200){
+                max-width:58rem; 
+            } 
+            @include mq($mq1240){    
+                max-width:70rem;
+            }
+            @include mq($mq1600){
+                font-size:2rem;
+            } 
+            @include mq($mq1920){
+                font-size:2.3rem;
+                max-width:76rem; 
+            }
+            br{
+                @include mq($mq600){
+                    display:block;
+                }
+                @include mq($mq1350){
+                    &:nth-of-type(1){
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+body.en-US{
+    .site-main{
+        .entry-content{
+            .intro{
+                font-family:$font__heading-en;
+                padding: 0 10%;
+                font-size:1.375rem;
+                @include mq($mq1024){
+                    font-size:1.82rem;
+                }
+                @include mq($mq1600){
+                    font-size:2.5rem;
+                }
+                span{
+                    font-size:1.9rem;
+                    @include mq($mq370){
+                        font-size:2rem;
+                    }
+                    @include mq($mq1024){
+                        font-size:2.8rem;
+                    }
+                    @include mq($mq1600){
+                        font-size:4rem;
+                    }
+                }
+            }
+        }
+    }
+    .en-US.delivery{
+        .entry-content{
+            p.intro{
+                @include mq($mq1600){
+                  min-width:75rem;
+                }
+            }
+        }
+    }
+    .en-US.homemade,
+    .en-US.about{
+        .entry-content{
+            p.intro{
+                @include mq($mq1600){
+                  min-width:85rem;
+                }
+                @include mq($mq1920){
+                    min-width:90rem;
+                  }
+
+            }
+        }
+    }
+}

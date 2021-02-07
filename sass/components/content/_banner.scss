@@ -1,0 +1,465 @@
+.site-main{
+    .entry-header{
+        display:none;
+    }
+    .entry-content{
+        .wp-block-cover{
+            overflow: initial;
+            min-height: 430px;
+            @include mq($mq600){
+                min-height: 500px;
+            }
+            @include mq($mq1600){
+                min-height: 600px;
+            }
+            &::after{
+                content:'';
+                position: absolute;
+                bottom:-1.5rem;
+                width: 100%;
+                height: 4rem;
+                background-image:url(images/banner/banner-w-mb.svg);
+                background-repeat: no-repeat;
+                background-position: bottom;
+                z-index: 1;
+                background-size: 100% auto;
+
+                @include mq($mq500){
+                    margin-bottom: -14%;
+                    bottom: 0;
+                }
+                @include mq($mq600){
+                    margin-bottom: -1%;
+                    background-image:url(images/banner/banner-w-dt.svg);
+                }
+            }
+            >.wp-block-cover__inner-container{
+                position: relative;
+                z-index: 2;
+                max-width: 1200px;
+                margin-top: -5%;
+                @include mq($mq500){
+                    transform: translateY(-8%);
+                }
+                @include mq($mq850){
+                    padding: 0 2%;
+                    margin-top: 0;
+                }
+                @include mq($mq1024){
+                    padding: 0 5%;
+                    transform: translateY(-10%);
+                }
+                @include mq($mq1350){
+                    padding: 0 2%;
+                }
+                @include mq($mq1600){
+                    padding: 0;
+                    max-width: 1170px;
+                }
+                p{
+                    font-family: $font__heading-jp;
+                    font-size: 2.1rem;
+                    line-height: 1;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #ffffff;
+                    margin-top:0;
+                    margin-bottom: 1.5rem;
+                    @include mq($mq370){
+                        font-size: 2.4rem; 
+                    }
+                    @include mq($mq850){
+                        font-size: 2.8rem;
+                    }
+                    @include mq($mq1024){
+                        font-size: 3.4rem;
+                        margin-bottom: 3rem;
+                       
+                    }
+
+                    &:first-of-type,
+                    &:last-of-type{
+                        max-width:13rem;
+                    }
+                    &:first-of-type{
+                        @include mq($mq850){
+                            max-width:24.5rem;
+                        }
+                        @include mq($mq1024){
+                            max-width:29rem;
+                        }
+                    }
+                    &:nth-of-type(2){
+                        max-width:15.5rem;
+                        @include mq($mq600){
+                            max-width:22.5rem;
+                        }
+                        @include mq($mq850){
+                            max-width:26rem;
+                        }
+                        @include mq($mq1024){
+                            max-width:32.5rem;
+                        }
+                    }
+
+                    &:nth-of-type(3){
+                        max-width:16rem;
+                        @include mq($mq600){
+                            max-width:24rem;
+                        }
+                        @include mq($mq850){
+                            max-width:27rem;
+                        }
+                        @include mq($mq1024){
+                            max-width:34rem;
+                        }
+                    }
+                    &:nth-of-type(4){
+                        @include mq($mq600){
+                            max-width:24.5rem;
+                        }
+                        @include mq($mq850){
+                            max-width:28rem;
+                        }
+                        @include mq($mq1024){
+                            max-width:35rem;
+                        }
+                    }
+                    a{                      
+                        text-decoration: none;
+                        color:#ffffff;       
+                        span{
+                            font-family: $font__heading-en;
+                            font-size:2.3rem;
+                            @include mq($mq850){
+                                font-size: 2.5rem;
+                            }
+                            @include mq($mq1024){
+                                    font-size:3.3rem;
+                            }
+                        }
+                        @include mq($mq600){
+                            br{
+                                display:none;
+                            }  
+                        }
+                    }     
+                }
+                // Hide special section link on banner
+                .banner-sp{
+                    display:none;
+                }
+                 
+            }
+        }
+    }
+    .delivery,
+    .homemade,
+    .about{
+       .entry-content{
+           .banner-wrapper{
+               .wp-block-cover__inner-container{
+                   .banner-text{
+                       max-width: 15rem; 
+                        margin:0 auto;
+                        border:none;
+                        position: relative;
+                        font-size: 2.15rem;
+                        line-height: 1.2;
+                        @include mq($mq370){
+                            font-size: 2.6rem;  
+                            max-width: 17rem;
+                        }
+                        @include mq($mq600){
+                            font-size: 2.85rem; 
+                            max-width: 20rem; 
+                        }
+                        @include mq($mq1024){
+                            max-width:25rem;
+                            font-size: 4rem ; 
+                         }
+                         @include mq($mq1600){
+                            font-size:4.8rem;
+                            max-width:29rem ;
+                        }
+                        
+                        &::before{
+                            content:"";
+                            height:1px;
+                            width:100%;
+                            background-color:#ffffff;
+                            position: absolute;
+                            top: 2.8rem;
+                            left:0;
+                            @include mq($mq370){
+                                top: 3.5rem;  
+                            }
+                            @include mq($mq600){
+                                top: 4rem;  
+                            }
+                            @include mq($mq1024){
+                                top: 5.5rem;
+                            }
+                            @include mq($mq1600){
+                                top: 6.5rem;
+                            }
+                            
+                        }
+                        span{
+                            &:lang(en){
+                                    font-size:1.8rem; 
+                                    @include mq($mq370){
+                                        font-size:2rem;  
+                                    }
+                                @include mq($mq1024){
+                                    font-size:2.5rem; 
+                                }
+                                @include mq($mq1600){
+                                    font-size:3.5rem;
+                                }
+                            }
+                        }
+                    }
+               }
+           }
+       } 
+    }
+    .delivery{ 
+        .entry-content{
+            .banner-wrapper{
+                .wp-block-cover__inner-container{
+                 .banner-text{
+                    &::before{
+                        background-color:$color__text-main;
+                    }
+                 }
+                }
+            }
+        }
+    }
+    .homemade{
+    .entry-content{
+        .wp-block-cover{
+            .wp-block-cover__inner-container{
+                .banner-text{
+                    max-width:13rem; 
+                    @include mq($mq370){
+                        max-width:15rem; 
+                    }
+                    @include mq($mq768){
+                        max-width:22rem;
+                    }
+                    @include mq($mq1024){
+                        max-width:28rem; 
+                    }
+                    @include mq($mq1600){
+                        max-width:40rem; 
+                    }
+                    &::before{
+                        @include mq($mq1024){
+                            top:5.5rem;
+                        } 
+                        @include mq($mq1600){
+                            top: 6rem;
+                        } 
+                    }
+
+                    span{
+                            display:block;
+                            line-height: 1;
+                            margin-top: 10px;
+                            @include mq($mq768){
+                                margin-top: 1rem;
+                            }
+                            @include mq($mq1024){
+                                font-size:2.5rem; 
+                            }
+                            @include mq($mq1600){
+                                font-size:3.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
+//EN version
+body.en-US{
+    .site-main{
+        .wp-block-cover{
+        .wp-block-cover__inner-container{
+            p{
+                font-family:$font__heading-en;
+                font-size:2.5rem;
+                margin-bottom: 2rem;
+               
+                @include mq($mq370){
+                    font-size:2.8rem;
+                }
+                @include mq($mq600){
+                    font-size:3.2rem;
+                }
+                    @include mq($mq1024){
+                        font-size:3.8rem;
+                    }
+                    @include mq($mq1600){
+                        font-size:4.2rem;
+                    }
+                &:first-of-type{
+                    max-width:11rem;
+                    @include mq($mq600){
+                        max-width:12rem;
+                    }
+                    @include mq($mq1024){
+                        max-width:14rem;
+                    }
+                }
+                &:nth-of-type(2){
+                    max-width:11.5rem;
+                    @include mq($mq370){
+                        max-width:14rem;
+                    }
+                    @include mq($mq600){
+                        max-width:15.5rem;
+                    }
+                    @include mq($mq1024){
+                        max-width:18rem;
+                    }
+                }
+                &:nth-of-type(3){
+                    max-width:11rem;
+                    @include mq($mq370){
+                        max-width:13rem;
+                    }
+                    @include mq($mq600){
+                        max-width:13.5rem;
+                    }
+                    @include mq($mq1024){
+                        max-width:16rem;
+                    }
+                }
+                &:nth-of-type(4){
+                   max-width:16rem;
+                   @include mq($mq370){
+                    max-width:16.5rem;
+                   }
+                   @include mq($mq600){
+                        max-width:18rem;
+                    }
+                    @include mq($mq1024){
+                        max-width:21rem;
+                    }
+                }
+              
+            }
+        }
+    
+        }
+        //About page base
+        .delivery,
+        .homemade,
+        .about{   
+            .entry-content{
+                .wp-block-cover{
+                    .wp-block-cover__inner-container{
+                        p{
+                            max-width:11rem;
+                            font-size:3.35rem;
+                            line-height: 1.2;
+
+                            @include mq($mq850){
+                                font-size:3.5rem;
+                            }
+
+                            @include mq($mq1024){
+                                font-size:4.2rem;
+                                max-width:14rem;
+                            }
+                            @include mq($mq1600){
+                                font-size:5rem;
+                                max-width:18rem;
+                            }
+                            &::before{
+                                top: 4.2rem; 
+                                @include mq($mq1024){
+                                    top: 5.3rem; 
+                                }
+                                @include mq($mq1600){
+                                    top: 6.3rem; 
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        .delivery{
+            >.entry-content{
+                .wp-block-cover{
+                    .wp-block-cover__inner-container{
+                        p{
+                            max-width: 13rem;
+                            @include mq($mq850){
+                                max-width: 15rem;
+                            }
+                            @include mq($mq1600){
+                                max-width: 20rem;
+                            }
+                            &::before{
+                                top: 4.4rem; 
+                                @include mq($mq1024){
+                                    top: 5.3rem; 
+                                } 
+                                @include mq($mq1600){
+                                    top: 6.3rem; 
+                                }  
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        .homemade{
+            >.entry-content{
+                .wp-block-cover{
+                    .wp-block-cover__inner-container{
+                        p{
+                            max-width: 17rem;
+                            font-size: 2.9rem;
+                            @include mq($mq370){
+                                font-size: 3.3rem;
+                                max-width: 16rem;
+                            }
+                            @include mq($mq600){
+                                font-size: 3.35rem;
+                            }
+                            @include mq($mq1024){
+                                font-size: 4.2rem;
+                                max-width:20rem;
+                            }
+                            @include mq($mq1600){
+                                font-size: 5rem;
+                                max-width:23rem;
+                            }
+                            &::before{
+                                top: 3.5rem; 
+                                @include mq($mq370){
+                                    top: 4rem; 
+                                }
+                                @include mq($mq1024){
+                                    top: 5rem; 
+                                }
+                                @include mq($mq1600){
+                                    top: 6rem; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
