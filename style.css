@@ -1395,13 +1395,11 @@ body.en-US .entry-content .featured .wp-block-group__inner-container .featured-p
 
 @media (min-width: 23.125em) { .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-area br:nth-child(odd) { display: none; } }
 
-.delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-top .wp-block-column h3, .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-bottom .wp-block-column h3 { font-size: 1.125rem; }
+.delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-top .wp-block-column h3, .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-bottom .wp-block-column h3 { font-size: 1.5rem; }
 
-@media (min-width: 53.125em) { .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-top .wp-block-column h3, .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-bottom .wp-block-column h3 { font-size: 1.5rem; } }
+@media (min-width: 62.5em) { .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-top .wp-block-column h3, .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-bottom .wp-block-column h3 { font-size: 1.85rem; } }
 
-@media (min-width: 62.5em) { .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-top .wp-block-column h3, .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-bottom .wp-block-column h3 { font-size: 2rem; } }
-
-@media (min-width: 100em) { .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-top .wp-block-column h3, .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-bottom .wp-block-column h3 { font-size: 2.2rem; } }
+@media (min-width: 100em) { .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-top .wp-block-column h3, .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-bottom .wp-block-column h3 { font-size: 2.1rem; } }
 
 .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-top .wp-block-column p, .delivery .site-main .entry-content .deli-info-wrapper .wp-block-group__inner-container .deli-info-bottom .wp-block-column p { font-size: 1.2rem; }
 
